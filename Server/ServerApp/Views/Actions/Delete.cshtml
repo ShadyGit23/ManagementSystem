@@ -1,0 +1,21 @@
+@model ServerApp.Models.ActionRecord
+
+@{
+    ViewData["Title"] = "Видалити гайд";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card card-custom border-danger p-4">
+            <h3 class="text-danger mb-3"><i class="bi bi-trash"></i> Видалення гайду дій</h3>
+            <p>Ви впевнені, що бажаєте видалити гайд проти <strong>@Model.OpponentChampion</strong>?</p>
+            <p class="text-secondary small">Для чемпіона: @(Model.Item?.ChampionName ?? "Невідомо")</p>
+
+            <form asp-action="Delete" method="post" class="d-flex justify-content-between mt-4">
+                <input type="hidden" asp-for="ID" />
+                <a asp-action="Index" class="btn btn-secondary">Скасувати</a>
+                <button type="submit" class="btn btn-danger">Видалити</button>
+            </form>
+        </div>
+    </div>
+</div>

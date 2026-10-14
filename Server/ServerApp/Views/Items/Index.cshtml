@@ -1,0 +1,59 @@
+@model IEnumerable<ServerApp.Models.Item>
+
+@{
+    ViewData["Title"] = "Керування Items (Champion Loadouts)";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-shield-shaded text-success"></i> Сетапи чемпіонів (Items)</h2>
+    <a asp-action="Create" class="btn btn-success">
+        <i class="bi bi-plus-circle"></i> Створити сетап чемпіона
+    </a>
+</div>
+
+<div class="card card-custom">
+    <div class="card-body p-0 table-responsive">
+        <table class="table table-custom table-hover align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Чемпіон</th>
+                    <th>Роль</th>
+                    <th>Ключові предмети</th>
+                    <th>Руни</th>
+                    <th>Автор (User)</th>
+                    <th class="text-end">Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="7" class="text-center py-4 text-secondary">
+                        Жодного сетапу ще не створено. Створіть спочатку користувача, а потім додайте перший білд!
+                    </td>
+                </tr>
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td class="fw-bold text-success">@item.ChampionName</td>
+                    <td><span class="badge bg-secondary">@item.Role</span></td>
+                    <td><small>@item.CoreItemBuild</small></td>
+                    <td><small>@item.RuneSetup</small></td>
+                    <td><span class="badge bg-primary">@(item.User?.Name ?? "ID " + item.UserID)</span></td>
+                    <td class="text-end">
+                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-outline-warning me-1">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

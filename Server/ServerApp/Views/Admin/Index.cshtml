@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Панель керування";
+}
+
+<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis card-custom">
+    <div class="col-lg-8 px-0">
+        <h1 class="display-6 fw-bold text-info">⚔️ Панель адміністратора LoL Matchup System</h1>
+        <p class="lead my-3 text-secondary">
+            Керування тактичними збірками чемпіонів, пулом аналітиків та ситуативними гайдами дій проти опонентів у середовищі ASP.NET Core MVC.
+        </p>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card card-custom h-100 text-center p-4">
+            <div class="card-body">
+                <i class="bi bi-people display-4 text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">1. Users (Strategists)</h5>
+                <p class="card-text text-secondary">Автори, аналітики та гравці команди.</p>
+                <h2 class="text-white mb-3">@ViewBag.UsersCount</h2>
+                <a asp-controller="Users" asp-action="Index" class="btn btn-outline-primary w-100">Перейти до Users</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card card-custom h-100 text-center p-4">
+            <div class="card-body">
+                <i class="bi bi-shield-shaded display-4 text-success mb-3"></i>
+                <h5 class="card-title fw-bold">2. Items (Loadouts)</h5>
+                <p class="card-text text-secondary">Тактичні конфігурації артефактів та рун.</p>
+                <h2 class="text-white mb-3">@ViewBag.ItemsCount</h2>
+                <a asp-controller="Items" asp-action="Index" class="btn btn-outline-success w-100">Перейти до Items</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card card-custom h-100 text-center p-4">
+            <div class="card-body">
+                <i class="bi bi-journal-text display-4 text-warning mb-3"></i>
+                <h5 class="card-title fw-bold">3. Actions (Matchups)</h5>
+                <p class="card-text text-secondary">Гайди протидії конкретним опонентним пікам.</p>
+                <h2 class="text-white mb-3">@ViewBag.ActionsCount</h2>
+                <a asp-controller="Actions" asp-action="Index" class="btn btn-outline-warning w-100">Перейти до Actions</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+@model ServerApp.Models.Item
+
+@{
+    ViewData["Title"] = "Видалити сетап";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card card-custom border-danger p-4">
+            <h3 class="text-danger mb-3"><i class="bi bi-trash"></i> Видалення сетапу чемпіона</h3>
+            <p>Ви впевнені, що бажаєте видалити збірку <strong>@Model.ChampionName (@Model.Role)</strong>?</p>
+            <p class="text-secondary small">Автор: @(Model.User?.Name ?? "Невідомо")</p>
+
+            <form asp-action="Delete" method="post" class="d-flex justify-content-between mt-4">
+                <input type="hidden" asp-for="ID" />
+                <a asp-action="Index" class="btn btn-secondary">Скасувати</a>
+                <button type="submit" class="btn btn-danger">Видалити</button>
+            </form>
+        </div>
+    </div>
+</div>

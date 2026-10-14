@@ -1,0 +1,55 @@
+@model IEnumerable<ServerApp.Models.User>
+
+@{
+    ViewData["Title"] = "Керування користувачами (Strategists)";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-people text-primary"></i> Користувачі (Strategists)</h2>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Додати користувача
+    </a>
+</div>
+
+<div class="card card-custom">
+    <div class="card-body p-0 table-responsive">
+        <table class="table table-custom table-hover align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ім'я / Нікнейм</th>
+                    <th>Email</th>
+                    <th>Пароль (Hash)</th>
+                    <th class="text-end">Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="5" class="text-center py-4 text-secondary">
+                        У базі поки немає користувачів. Натисніть кнопку вище, щоб створити першого!
+                    </td>
+                </tr>
+            }
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.ID</td>
+                    <td class="fw-bold text-info">@user.Name</td>
+                    <td>@user.Email</td>
+                    <td><code>@user.PasswordHash</code></td>
+                    <td class="text-end">
+                        <a asp-action="Edit" asp-route-id="@user.ID" class="btn btn-sm btn-outline-warning me-1">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@user.ID" class="btn btn-sm btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
