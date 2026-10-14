@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -6,13 +7,30 @@ using ServerApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Реєстрація бази даних SQLite
+// ==========================================
+// 1. БАЗА ДАНИХ (SQLite)
+// ==========================================
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") 
+        ?? "Data Source=app.db"));
 
-// 2. Налаштування JWT-аутентифікації (Пункти 2-3 методички)
+// ==========================================
+// 2. MVC КОНТРОЛЕРИ ТА JSON СЕРІАЛІЗАЦІЯ
+// ==========================================
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options =>
+    {
+        // Запобігає зацикленню при серіалізації навігаційних зв'язків EF Core
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
+
+// ==========================================
+// 3. JWT-АУТЕНТИФІКАЦІЯ
+// ==========================================
+// Читаємо той самий ключ, що і в AuthController (із appsettings.json з надійним fallback)
 var jwtSettings = builder.Configuration.GetSection("Jwt");
-var secretKey = Encoding.UTF8.GetBytes(jwtSettings["Key"]!);
+var secretKeyString = jwtSettings["Key"] ?? "SuperSecretLoLAdminKey2026MatchupArmorySystemVeryLongKey!";
+var secretKeyBytes = Encoding.UTF8.GetBytes(secretKeyString);
 
 builder.Services.AddAuthentication(options =>
 {
@@ -23,33 +41,32 @@ builder.Services.AddAuthentication(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
+        ValidateIssuer = false,   // Вимикаємо сувору перевірку для локальної розробки
+        ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = jwtSettings["Issuer"],
-        ValidAudience = jwtSettings["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(secretKey)
+        IssuerSigningKey = new SymmetricSecurityKey(secretKeyBytes),
+        ClockSkew = TimeSpan.Zero
     };
 
-    // Дозволяє зчитувати JWT як із заголовка Authorization, так і з Cookie браузера
     options.Events = new JwtBearerEvents
     {
         OnMessageReceived = context =>
         {
-            if (context.Request.Cookies.ContainsKey("jwt"))
+            // Зчитуємо саме ту cookie "jwt", яку записує AuthController
+            if (context.Request.Cookies.TryGetValue("jwt", out var jwtToken))
             {
-                context.Token = context.Request.Cookies["jwt"];
+                context.Token = jwtToken;
             }
             return Task.CompletedTask;
         },
         OnChallenge = context =>
         {
-            // Якщо користувач у браузері не авторизований — перенаправляємо на сторінку логіну
-            if (!context.Response.HasStarted)
+            // Для API повертаємо 401, для браузера — редирект на логін
+            if (!context.Request.Path.StartsWithSegments("/api") && !context.Response.HasStarted)
             {
-                context.Response.Redirect("/Auth/Login");
                 context.HandleResponse();
+                context.Response.Redirect("/Auth/Login");
             }
             return Task.CompletedTask;
         }
@@ -57,17 +74,43 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddAuthorization();
-builder.Services.AddControllersWithViews();
+
+// ==========================================
+// 4. SWAGGER ДЛЯ REST API
+// ==========================================
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// ==========================================
+// 5. КОНФІГУРАЦІЯ HTTP-КОНВЕЄРА (MIDDLEWARE)
+// ==========================================
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseStaticFiles();
+
 app.UseRouting();
 
-// Обов'язковий порядок middleware: спочатку Authentication, потім Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapDefaultControllerRoute();
+// Якщо користувач уже авторизований — відкриваємо дашборд адмінки, інакше — форму логіну
+app.MapGet("/", (HttpContext ctx) => 
+    ctx.User.Identity?.IsAuthenticated == true 
+        ? Results.Redirect("/Admin") 
+        : Results.Redirect("/Auth/Login"));
+
+// Маршрутизація для MVC адмін-панелі
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Admin}/{action=Index}/{id?}");
+
+// Маршрутизація для REST API контролерів
+app.MapControllers();
 
 app.Run();
