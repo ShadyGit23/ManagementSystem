@@ -1,147 +1,150 @@
-<div align="center">
-
 # ⚔️ League of Legends Matchup & Armory System
 
-**Система для управління [Strategists, Champions, MatchupLoadouts] з MVC-адмін-панеллю та MAUI-застосунком**
+[![.NET Version](https://img.shields.io/badge/.NET-10.0.401-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-MVC_%26_Web_API-2C8EBB?logo=dotnet)](https://dotnet.microsoft.com/apps/aspnet)
+[![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-Cross--Platform-512BD4?logo=dotnet)](https://dotnet.microsoft.com/apps/maui)
+[![Database](https://img.shields.io/badge/SQLite-Entity_Framework_Core-003B57?logo=sqlite)](https://www.sqlite.org/)
 
-[![Platform](https://img.shields.io/badge/.NET-10.0.401-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-[![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-MVC_%26_WebAPI-2E7D32?logo=dotnet)](https://dotnet.microsoft.com/apps/aspnet)
-[![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-Cross--Platform-107C41?logo=xamarin)](https://dotnet.microsoft.com/apps/maui)
-[![Architecture](https://img.shields.io/badge/Architecture-MVVM_%2B_Repository-0078D4)]()
-[![Status](https://img.shields.io/badge/Status-In_Development-F57C00)]()
+**League of Legends Matchup & Armory System** — це дворівнева аналітична та конфігураційна платформа, призначена для підготовки кіберспортивних команд і гравців до матчів. 
 
-</div>
+Система реалізує концепцію динамічної адаптації під ворожого опонента:
 
----
+$$
+\text{Strategy} = f(\text{Champion}, \text{Opponent}, \text{Runes}, \text{Items})
+$$
 
-## 📖 1. Опис предметної області
-
-**League of Legends Matchup & Armory System** — це спеціалізована аналітична платформа для кіберспортивних команд і гравців. 
-
-У сучасній League of Legends успіх визначається не ізольованим вибором предметів, а комплексною адаптацією стратегії:
-
-$$\text{Strategy} = f(\text{Champion}, \text{Opponent}, \text{Runes}, \text{Items})$$
-
-Система дозволяє аналітикам вести облік пулу чемпіонів команди, а гравцям — швидко конфігурувати й узгоджувати тактичні білди (руни, ключові артефакти, рівень складності) під конкретного ворожого суперника на лінії.
+Комплекс складається з веб-панелі керування для головного тренера та мобільного кросплатформеного застосунку для гравців/аналітиків.
 
 ---
 
-## 🏛️ 2. Реляційна структура БД (Архітектура 3 таблиць)
+## 🏛️ 1. Архітектурне проєктування (Клієнт–Сервер)
 
-Проєкт суворо дотримується вимог курсу щодо розподілу на 3 реляційні сутності зі зв'язками `Foreign Key`:
+Проєкт розділено на два автономні компоненти відповідно до вимог курсу:
 
-```text
-[Strategists] (Users)
-     │
-     ├── 1:N ──> [Champions] (Items)
-     │                │
-     └── 1:N ─────────┴── 1:N ──> [MatchupLoadouts] (Actions)
+* **`Server/ServerApp` (ASP.NET Core 10):**
+  * Централізоване ядро системи.
+  * Реалізує бізнес-правила, міграції бази даних через ORM Entity Framework Core, MVC-панель адміністратора та REST API з JWT-аутентифікацією.
+* **`Client/ClientApp` (.NET MAUI 10):**
+  * Кросплатформений клієнтський додаток (Windows Desktop / Android).
+  * Побудований за шаблоном проєктування **MVVM** (Model-View-ViewModel). Забезпечує перегляд каталогу доступних чемпіонів та надсилання адаптивних тактичних гайдів на сервер через REST API.
+
+---
+
+## 🗄️ 2. Реляційна модель бази даних (Архітектура 3 таблиць)
+
+Схема бази даних суворо відповідає навчальному патерну `[Users, Items, Actions]` і реалізована за допомогою **SQLite**:
+
+```
+ ┌────────────────────────┐
+ │      Users (1)         │  Strategists (Автори / Гравці)
+ └───────────┬────────────┘
+             │ 1
+             │
+             │ N
+ ┌───────────▼────────────┐
+ │      Items (2)         │  ChampionLoadouts (Тактичні збірки чемпіонів)
+ └───────────┬────────────┘
+             │ 1
+             │
+             │ N
+ ┌───────────▼────────────┐
+ │     Actions (3)        │  MatchupGuides (Гайди під конкретних опонентів)
+ └────────────────────────┘
 ```
 
-| Таблиця (Курсова роль) | Опис та призначення | Ключові атрибути |
-| :--- | :--- | :--- |
-| **`Strategists`** <br>*(Users)* | Облікові записи аналітиків, тренерів та гравців. | `ID`, `SummonerName`, `Email`, `PasswordHash`, `RankTier` |
-| **`Champions`** <br>*(Items)* | Каталог персонажів у тренувальному пулі команди, закріплених за аналітиком. | `ID`, `Name`, `Role` *(Top, Mid, etc.)*, `DamageType`, `StrategistID` *(FK)* |
-| **`MatchupLoadouts`** <br>*(Actions)* | Готові тактичні сетапи (руни + предмети + оцінка складності) проти конкретного ворога. | `ID`, `StrategistID` *(FK)*, `ChampionID` *(FK)*, `OpponentChampion`, `RuneSetup`, `CoreItemBuild`, `MatchupDifficulty`, `Status` |
+### Специфікація таблиць
+
+1. **`Users` (Strategists):**
+   * `ID` (INTEGER, Primary Key, AutoIncrement) — унікальний ідентифікатор користувача.
+   * `Name` (TEXT) — нікнейм або ім'я аналітика/гравця (наприклад, *Faker*, *Caps*).
+   * `Email` (TEXT, Unique) — обліковий запис для авторизації.
+   * `PasswordHash` (TEXT) — безпечний хеш пароля для доступу до системи.
+
+2. **`Items` (ChampionLoadouts):**
+   * `ID` (INTEGER, Primary Key, AutoIncrement) — унікальний ідентифікатор збірки.
+   * `ChampionName` (TEXT) — ім'я чемпіона (наприклад, *Yasuo*, *Ahri*).
+   * `Role` (TEXT) — ігрова позиція (*Top, Jungle, Mid, ADC, Support*).
+   * `CoreItemBuild` (TEXT) — ключова лінійка артефактів.
+   * `RuneSetup` (TEXT) — дерево рун та ключовий камінь (Keystone).
+   * `UserID` (INTEGER, Foreign Key $\rightarrow$ `Users.ID`, `ON DELETE CASCADE`) — закріплений автор.
+
+3. **`Actions` (MatchupGuides):**
+   * `ID` (INTEGER, Primary Key, AutoIncrement) — унікальний ідентифікатор гайду.
+   * `UserID` (INTEGER, Foreign Key $\rightarrow$ `Users.ID`, `ON DELETE CASCADE`) — гравець, що сформував гайд.
+   * `ItemID` (INTEGER, Foreign Key $\rightarrow$ `Items.ID`, `ON DELETE CASCADE`) — зв'язок із конкретним сетапом чемпіона.
+   * `OpponentChampion` (TEXT) — ворожий чемпіон на лінії (наприклад, *Zed*, *Syndra*).
+   * `ActionDetails` (TEXT) — покрокові тактичні настанови щодо контролю лінії та розіграшу ультимейту.
+   * `Status` (TEXT, CHECK: `'Draft'`, `'Approved'`, `'Archived'`) — стан валідації гайду тренером.
 
 ---
 
-## 📁 3. Структура проєкту
-
-Репозиторій організований за модульною схемою відповідно до вимог методичних вказівок:
+## 📂 3. Структура репозиторію
 
 ```text
 ManagementSystem/
-├── .gitignore                     # Правила ігнорування бінарних файлів та конфігів
-├── README.md                      # Документація проєкту
-├── Server/                        # Серверна частина (.NET 10)
-│   ├── ServerApp.slnx             # Файл рішення бекенду
+├── .gitignore                      # Виключення збірок bin/obj, *.user, appsettings.json
+├── README.md                       # Документація проєкту
+├── Database/
+│   ├── init.sql                    # Первинний DDL-скрипт зі схемою та тестовими даними
+│   └── app.db                      # Фізична локальна база даних SQLite (генерується EF Core)
+├── Server/
+│   ├── ServerApp.slnx              # Файл рішення сервера
 │   └── ServerApp/
-│       ├── Controllers/           # MVC та REST API контролери
-│       ├── Models/                # Entity Framework Core сутності
-│       ├── Views/                 # Razor Views адмін-панелі (Bootstrap)
-│       ├── Program.cs             # DI-контейнер, конфігурація JWT та пайплайн
+│       ├── Controllers/            # Контролери MVC та REST API
+│       ├── Data/                   # Контекст бази даних (AppDbContext)
+│       ├── Migrations/             # Міграції Entity Framework Core
+│       ├── Models/                 # C#-моделі: User, Item, ActionRecord
+│       ├── Program.cs              # Точка входу веб-сервера та реєстрація сервісів
 │       └── ServerApp.csproj
-├── Client/                        # Клієнтська мобільна частина (.NET MAUI 10)
-│   ├── ClientApp.slnx             # Файл рішення клієнта
-│   └── ClientApp/
-│       ├── ViewModels/            # Архітектура MVVM (CommunityToolkit.Mvvm)
-│       ├── Views/                 # Екрани XAML (LoginPage, ItemsPage, ActionPage)
-│       ├── Services/              # Клієнт для взаємодії з REST API (HttpClient)
-│       └── ClientApp.csproj
-├── Database/                      # Скрипти БД (Лабораторна №2)
-│   └── init.sql                   # DDL схеми та початкові дані (Seed Data)
-└── Docs/                          # Специфікації та документація (OpenAPI/Swagger)
+└── Client/
+    ├── ClientApp.slnx              # Файл рішення клієнта
+    └── ClientApp/
+        ├── ViewModels/             # Компоненти патерну MVVM
+        ├── App.xaml
+        ├── MauiProgram.cs          # Точка входу мобільного додатка
+        └── ClientApp.csproj
 ```
 
 ---
 
 ## 🛠️ 4. Технологічний стек
 
-* **Платформа:** .NET 10.0 SDK (`10.0.401`)
-* **Серверний бекенд:** ASP.NET Core (MVC Admin Panel + REST API)
-* **Доступ до даних:** Entity Framework Core (Code-First / DDL SQL)
-* **Мобільний клієнт:** .NET Multi-platform App UI (.NET MAUI)
-* **Патерн клієнта:** MVVM (Model-View-ViewModel) за допомогою `CommunityToolkit.Mvvm`
-* **Безпека:** JWT (JSON Web Tokens) для авторизації в REST API та окремий вбудований адмін для MVC
+* **Базова платформа:** .NET 10 (SDK 10.0.401)
+* **Серверна частина:** ASP.NET Core 10 (MVC + Web API)
+* **ORM та збереження даних:** Entity Framework Core 10, SQLite
+* **Клієнтська частина:** .NET MAUI 10 (кросплатформений інтерфейс XAML/C#)
+* **Архітектурні патерни:** MVC (сервер), MVVM (клієнт), Repository / Unit of Work
 
 ---
 
-## 🚀 5. Інструкція для локального запуску
+## 🚀 5. Інструкція для локального розгортання та запуску
 
-### Передумови
-1. Встановлений [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) (`10.0.401` або новіший).
-2. Встановлене мобільне робоче навантаження (Workload):
-   ```powershell
-   dotnet workload install maui
+### Попередні вимоги
+* Встановлений [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+* Встановлене робоче навантаження MAUI (`dotnet workload install maui`)
+
+### Кроки запуску
+
+1. **Клонувати репозиторій:**
+   ```bash
+   git clone https://github.com/<ВАШ_ЮЗЕРНЕЙМ>/ManagementSystem.git
+   cd ManagementSystem
    ```
-3. Встановлений [Git](https://git-scm.com/).
 
-### Клонування репозиторію
-```powershell
-git clone https://github.com/<ВАШ_НІКНЕЙМ>/ManagementSystem.git
-cd ManagementSystem
-```
+2. **Застосування міграцій до бази даних:**
+   ```bash
+   cd Server/ServerApp
+   dotnet ef database update
+   cd ../..
+   ```
 
-### Запуск серверної частини (ASP.NET Core)
-```powershell
-# Запуск веб-сервера
-dotnet run --project Server/ServerApp/ServerApp.csproj
-```
-*Адреса за замовчуванням:* `http://localhost:5000` (або порт, вказаний консоллю).
+3. **Запуск веб-сервера (ASP.NET Core):**
+   ```bash
+   dotnet run --project Server/ServerApp/ServerApp.csproj
+   ```
+   *Веб-сервер буде доступний за адресою: `http://localhost:5xxx`.*
 
-### Збірка та запуск мобільного застосунку (MAUI)
-```powershell
-# Збірка клієнта
-dotnet build Client/ClientApp/ClientApp.csproj
-
-# Запуск на Windows Machine (для швидкої перевірки):
-dotnet run --project Client/ClientApp/ClientApp.csproj -f net10.0-windows10.0.19041.0
-```
-
----
-
-## 📡 6. Основні ендпоінти REST API
-
-| Метод | URL | Опис | Доступ |
-| :---: | :--- | :--- | :---: |
-| `POST` | `/api/auth/login` | Отримання JWT-токена за логіном аналітика | Public |
-| `GET` | `/api/champions` | Список доступних чемпіонів для `ItemsPage` | Bearer Token |
-| `POST` | `/api/matchuploadouts` | Відправка нового тактичного сетапу проти суперника | Bearer Token |
-
----
-
-## 📋 7. Дорожня карта виконання (Roadmap)
-
-- [x] **Лаб 1:** Ініціалізація структури, середовища .NET 10 та репозиторію Git.
-- [ ] **Лаб 2:** Проєктування БД (`init.sql`, зв'язки Foreign Key, індекси).
-- [ ] **Лаб 3:** Підключення Entity Framework Core та моделі сутностей.
-- [ ] **Лаб 4:** Реалізація аутентифікації адміністратора (JWT).
-- [ ] **Лаб 5:** Створення повноцінної MVC адмін-панелі з CRUD-операціями.
-- [ ] **Лаб 6:** Розробка REST API та підключення Swagger UI.
-- [ ] **Лаб 7:** JWT-аутентифікація користувачів мобільного додатку через API.
-- [ ] **Лаб 8:** Розробка .NET MAUI інтерфейсу на патерні MVVM.
-- [ ] **Лаб 9:** Інтеграція MAUI з сервером через `HttpClient`.
-- [ ] **Лаб 10:** Комплексне тестування (Postman, емулятор, браузер).
-- [ ] **Лаб 11:** Оптимізація запитів та фіналізація індексів БД.
-- [ ] **Лаб 12:** Фінальне розгортання та здача проєкту на GitHub.
+4. **Компіляція та запуск клієнта (.NET MAUI під Windows):**
+   ```bash
+   dotnet run --project Client/ClientApp/ClientApp.csproj -f net10.0-windows10.0.19041.0
+   ```
