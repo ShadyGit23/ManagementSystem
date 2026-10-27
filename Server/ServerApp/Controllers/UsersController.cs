@@ -36,6 +36,9 @@ public class UsersController : Controller
     {
         if (ModelState.IsValid)
         {
+            // Хешуємо пароль алгоритмом BCrypt із автоматичною сіллю
+            user.PasswordHash = BCrypt.Net.BCrypt.EnhancedHashPassword(user.PasswordHash.Trim());
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -63,6 +66,14 @@ public class UsersController : Controller
 
         if (ModelState.IsValid)
         {
+
+            // Якщо введено новий звичайний текст (не хеш BCrypt), хешуємо його
+            // Хеші BCrypt завжди починаються з $2a$, $2b$ або $2y$
+            if (!user.PasswordHash.StartsWith("$2"))
+            {
+                user.PasswordHash = BCrypt.Net.BCrypt.EnhancedHashPassword(user.PasswordHash.Trim());
+            }
+            
             _context.Update(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

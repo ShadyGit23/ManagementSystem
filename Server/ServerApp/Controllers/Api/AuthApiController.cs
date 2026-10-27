@@ -47,7 +47,27 @@ public class AuthApiController : ControllerBase
 
         // 2. Перевірка пароля
         // Згідно з пунктом 4 методички, порівнюємо пароль із полем PasswordHash у таблиці Users
-        if (user.PasswordHash != dto.Password.Trim())
+         // 2. Безпечна перевірка пароля через BCrypt
+        bool isPasswordValid = false;
+
+        // Перевіряємо, чи в базі вже лежить хеш BCrypt
+        if (user.PasswordHash.StartsWith("$2"))
+        {
+            isPasswordValid = BCrypt.Net.BCrypt.EnhancedVerify(dto.Password.Trim(), user.PasswordHash);
+        }
+        else
+        {
+            // Якщо запис було створено раніше як відкритий текст (наприклад, "123")
+            if (user.PasswordHash == dto.Password.Trim())
+            {
+                isPasswordValid = true;
+                // Автоматично модернізуємо старий пароль у базі до надійного BCrypt хешу!
+                user.PasswordHash = BCrypt.Net.BCrypt.EnhancedHashPassword(dto.Password.Trim());
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        if (!isPasswordValid)
         {
             return Unauthorized(new { message = "Невірний пароль облікового запису." });
         }
