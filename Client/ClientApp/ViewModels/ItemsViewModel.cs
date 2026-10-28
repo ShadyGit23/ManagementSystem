@@ -33,24 +33,36 @@ public ItemsViewModel()
 }
 
 [RelayCommand]
-public async Task LoadDataAsync()
-{
-    try
+/// <summary>
+    /// Завантаження даних із кешуванням (Оптимізація Завдання 11).
+    /// </summary>
+    public async Task LoadDataAsync()
     {
-        IsRefreshing = true;
-        var serverItems = await _apiService.GetItemsAsync();
-
-        Items.Clear();
-        foreach (var item in serverItems)
+        // Якщо список уже є в пам'яті і це не примусове оновлення користувачем через свайп
+        if (Items.Any() && !IsRefreshing)
         {
-            Items.Add(item);
+            return;
+        }
+
+        try
+        {
+            IsRefreshing = true;
+            var serverItems = await _apiService.GetItemsAsync();
+
+            if (serverItems.Any())
+            {
+                Items.Clear();
+                foreach (var item in serverItems)
+                {
+                    Items.Add(item);
+                }
+            }
+        }
+        finally
+        {
+            IsRefreshing = false;
         }
     }
-    finally
-    {
-        IsRefreshing = false;
-    }
-}
 
 [RelayCommand]
 private async Task ItemSelectedAsync(ItemModel item)

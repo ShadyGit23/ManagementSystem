@@ -50,3 +50,11 @@ INSERT INTO Actions (UserID, ItemID, OpponentChampion, ActionDetails, Status) VA
 (1, 1, 'Zed', 'Rush Plated Steelcaps early. Save Windwall exclusively for Zed triple Q combo after Death Mark.', 'Approved'),
 (2, 2, 'Syndra', 'Bait Scatter the Weak before Charm engage. Roam to side lanes with Spirit Rush.', 'Approved'),
 (3, 3, 'Renekton', 'Concede early prio. Freeze near tower and trade only when Fury bar is empty.', 'Draft');
+
+-- ==============================================================================
+-- Оптимізація: Індекси для прискорення вибірок та JOIN операцій (Завдання 11)
+-- ==============================================================================
+CREATE INDEX IF NOT EXISTS idx_users_email ON Users(Email);
+CREATE INDEX IF NOT EXISTS idx_items_userid ON Items(UserID);
+CREATE INDEX IF NOT EXISTS idx_actions_itemid ON Actions(ItemID);
+CREATE INDEX IF NOT EXISTS idx_actions_userid ON Actions(UserID);
