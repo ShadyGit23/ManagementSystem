@@ -1,10 +1,13 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using ClientApp.Services;
 
 namespace ClientApp.ViewModels;
 
 public partial class LoginViewModel : ObservableObject
 {
+    private readonly ApiService _apiService = new();
+
     [ObservableProperty]
     private string _email = string.Empty;
 
@@ -34,12 +37,18 @@ public partial class LoginViewModel : ObservableObject
         {
             IsBusy = true;
 
-            // Емуляція валідації вхідних даних для Завдання 8 (повноцінний виклик API буде в Завданні 9)
-            await Task.Delay(400);
+            var (success, errorMsg) = await _apiService.LoginAsync(Email, Password);
 
-            if (OnLoginSuccess != null)
+            if (success)
             {
-                await OnLoginSuccess.Invoke();
+                if (OnLoginSuccess != null)
+                {
+                    await OnLoginSuccess.Invoke();
+                }
+            }
+            else
+            {
+                ErrorMessage = errorMsg ?? "Помилка автентифікації.";
             }
         }
         finally

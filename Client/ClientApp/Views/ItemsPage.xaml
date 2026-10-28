@@ -20,7 +20,7 @@
         <!-- Список CollectionView згідно з пунктом 4 методички -->
         <RefreshView Grid.Row="1" 
                      IsRefreshing="{Binding IsRefreshing}" 
-                     Command="{Binding LoadMockDataCommand}">
+                     Command="{Binding LoadDataCommand}">
             
             <CollectionView ItemsSource="{Binding Items}" 
                             SelectionMode="None" 
