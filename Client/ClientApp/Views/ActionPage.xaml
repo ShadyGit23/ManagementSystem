@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ClientApp.ViewModels"
+             x:Class="ClientApp.Views.ActionPage"
+             Title="Створення тактичного плану"
+             BackgroundColor="#0b132b">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="16" Padding="20">
+            
+            <!-- Інфо про обраного чемпіона -->
+            <Border Stroke="#0284c7" BackgroundColor="#1c2541" Padding="15">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="НАШ ЧЕМПІОН (ITEM):" FontSize="11" TextColor="#38bdf8" FontAttributes="Bold" />
+                    <Label Text="{Binding TargetItem.ChampionName}" FontSize="22" FontAttributes="Bold" TextColor="White" />
+                    <Label Text="{Binding TargetItem.Role, StringFormat='Лінія: {0}'}" FontSize="13" TextColor="#94a3b8" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Поле ворожого опонентного чемпіона -->
+            <Label Text="Ворожий опонент на лінії:" TextColor="#cbd5e1" FontAttributes="Bold" />
+            <Border Stroke="#3a506b" BackgroundColor="#1c2541" Padding="5,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <Entry Text="{Binding OpponentChampion}" 
+                       Placeholder="Наприклад: Zed, Ahri, Darius..." 
+                       PlaceholderColor="#64748b" 
+                       TextColor="White" />
+            </Border>
+
+            <!-- Поле тактичного плану -->
+            <Label Text="Покроковий тактичний план:" TextColor="#cbd5e1" FontAttributes="Bold" />
+            <Border Stroke="#3a506b" BackgroundColor="#1c2541" Padding="8">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <Editor Text="{Binding ActionDetails}" 
+                        Placeholder="Опишіть тактику гри: коли пушити, під які скіли зберігати флеш..." 
+                        PlaceholderColor="#64748b" 
+                        TextColor="White" 
+                        HeightRequest="100" />
+            </Border>
+
+            <!-- Вибір статусу гайду -->
+            <Label Text="Статус гайду:" TextColor="#cbd5e1" FontAttributes="Bold" />
+            <Border Stroke="#3a506b" BackgroundColor="#1c2541" Padding="5,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <Picker ItemsSource="{Binding StatusOptions}" 
+                        SelectedItem="{Binding SelectedStatus}" 
+                        TextColor="White" 
+                        Title="Оберіть статус" />
+            </Border>
+
+            <!-- Інформаційне повідомлення -->
+            <Label Text="{Binding Message}" 
+                   TextColor="{Binding IsSuccess, Converter={StaticResource BoolToColorConverter}}" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Кнопка збереження -->
+            <Button Text="Опублікувати тактичний гайд" 
+                    Command="{Binding SaveActionCommand}" 
+                    BackgroundColor="#eab308" 
+                    TextColor="#0f172a" 
+                    FontAttributes="Bold" 
+                    HeightRequest="50" 
+                    CornerRadius="8" 
+                    Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

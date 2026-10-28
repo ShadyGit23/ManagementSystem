@@ -1,16 +1,18 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using ClientApp.Views;
 
 namespace ClientApp;
 
 public partial class App : Application
 {
-	public App()
-	{
-		InitializeComponent();
-	}
+    public App()
+    {
+        InitializeComponent();
 
-	protected override Window CreateWindow(IActivationState? activationState)
-	{
-		return new Window(new AppShell());
-	}
+        // Пункт 6 методички: налаштування навігації між сторінками
+        MainPage = new NavigationPage(new LoginPage())
+        {
+            BarBackgroundColor = Color.FromArgb("#1c2541"),
+            BarTextColor = Colors.White
+        };
+    }
 }

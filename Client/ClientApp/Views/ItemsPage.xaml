@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:ClientApp.Models"
+             xmlns:vm="clr-namespace:ClientApp.ViewModels"
+             x:Class="ClientApp.Views.ItemsPage"
+             Title="Каталог чемпіонів (Items)"
+             BackgroundColor="#0b132b">
+
+    <Grid RowDefinitions="Auto, *">
+        
+        <!-- Верхня плашка дій -->
+        <HorizontalStackLayout Grid.Row="0" Padding="15,10" Spacing="10" BackgroundColor="#1c2541">
+            <Label Text="Оберіть чемпіона для тактики:" 
+                   TextColor="#e2e8f0" 
+                   VerticalOptions="Center" 
+                   FontAttributes="Bold" />
+        </HorizontalStackLayout>
+
+        <!-- Список CollectionView згідно з пунктом 4 методички -->
+        <RefreshView Grid.Row="1" 
+                     IsRefreshing="{Binding IsRefreshing}" 
+                     Command="{Binding LoadMockDataCommand}">
+            
+            <CollectionView ItemsSource="{Binding Items}" 
+                            SelectionMode="None" 
+                            Margin="10">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:ItemModel">
+                        <Border Stroke="#3a506b" 
+                                BackgroundColor="#1c2541" 
+                                StrokeThickness="1" 
+                                Margin="0,6" 
+                                Padding="15">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            
+                            <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto, Auto">
+                                
+                                <Label Grid.Row="0" Grid.Column="0" 
+                                       Text="{Binding ChampionName}" 
+                                       FontSize="20" 
+                                       FontAttributes="Bold" 
+                                       TextColor="#38bdf8" />
+
+                                <Border Grid.Row="0" Grid.Column="1" 
+                                        BackgroundColor="#334155" 
+                                        Padding="8,2">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="4" />
+                                    </Border.StrokeShape>
+                                    <Label Text="{Binding Role}" 
+                                           TextColor="White" 
+                                           FontSize="12" />
+                                </Border>
+
+                                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
+                                       Text="{Binding CoreItemBuild, StringFormat='⚔️ Білд: {0}'}" 
+                                       TextColor="#cbd5e1" 
+                                       FontSize="13" 
+                                       Margin="0,5,0,2" />
+
+                                <Label Grid.Row="2" Grid.Column="0" 
+                                       Text="{Binding RuneSetup, StringFormat='🔮 Руни: {0}'}" 
+                                       TextColor="#94a3b8" 
+                                       FontSize="12" />
+
+                                <Button Grid.Row="2" Grid.Column="1" 
+                                        Text="Додати тактику ➔" 
+                                        FontSize="12"
+                                        BackgroundColor="#0284c7"
+                                        TextColor="White"
+                                        Padding="10,0"
+                                        HeightRequest="36"
+                                        Clicked="OnAddActionClicked" 
+                                        CommandParameter="{Binding .}" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+</ContentPage>

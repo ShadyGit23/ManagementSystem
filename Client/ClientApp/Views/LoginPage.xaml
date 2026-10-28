@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ClientApp.ViewModels"
+             x:Class="ClientApp.Views.LoginPage"
+             Title="Вхід у LoL Matchup System"
+             BackgroundColor="#0b132b">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            
+            <Label Text="⚔️" 
+                   FontSize="64" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="LoL Matchup &amp; Armory" 
+                   FontSize="26" 
+                   FontAttributes="Bold" 
+                   TextColor="#48cae4" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="Мобільний клієнт для гравців та аналітиків" 
+                   FontSize="14" 
+                   TextColor="#94a3b8" 
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,15" />
+
+            <!-- Поле Email -->
+            <Border Stroke="#3a506b" StrokeThickness="1" BackgroundColor="#1c2541" Padding="5,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <Entry Text="{Binding Email}" 
+                       Placeholder="Введіть ваш Email (напр. Shady@t1a.gg)" 
+                       PlaceholderColor="#64748b"
+                       TextColor="White"
+                       Keyboard="Email" />
+            </Border>
+
+            <!-- Поле Пароль -->
+            <Border Stroke="#3a506b" StrokeThickness="1" BackgroundColor="#1c2541" Padding="5,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <Entry Text="{Binding Password}" 
+                       Placeholder="Введіть пароль" 
+                       PlaceholderColor="#64748b"
+                       TextColor="White"
+                       IsPassword="True" />
+            </Border>
+
+            <!-- Повідомлення про помилку -->
+            <Label Text="{Binding ErrorMessage}" 
+                   TextColor="#ef4444" 
+                   FontSize="14" 
+                   HorizontalOptions="Center"
+                   IsVisible="{Binding ErrorMessage, Converter={StaticResource StringNotNullOrEmptyConverter}}" />
+
+            <!-- Індикатор завантаження -->
+            <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                               IsVisible="{Binding IsBusy}" 
+                               Color="#38bdf8" />
+
+            <!-- Кнопка Входу -->
+            <Button Text="Увійти в систему" 
+                    Command="{Binding LoginCommand}"
+                    BackgroundColor="#0284c7"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    IsEnabled="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
