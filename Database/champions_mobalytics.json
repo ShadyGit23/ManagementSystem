@@ -1,0 +1,1040 @@
+[
+  {
+    "ChampionName": "Aatrox",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Sundered Sky -> Eclipse -> Sterak's Gage -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Conqueror + Resolve (Second Wind / Revitalize)"
+  },
+  {
+    "ChampionName": "Akali",
+    "Role": "Top",
+    "CoreItemBuild": "Sorcerer's Shoes -> Riftmaker -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Conqueror + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Ambessa",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Sundered Sky -> Eclipse -> Death's Dance -> Maw of Malmortius -> Guardian Angel",
+    "RuneSetup": "Conqueror + Resolve (Bone Plating / Overgrowth)"
+  },
+  {
+    "ChampionName": "Camille",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Ravenous Hydra -> Sterak's Gage -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Grasp of the Undying + Inspiration (Magical Footwear / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Cho'Gath",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Sunfire Aegis -> Thornmail -> Force of Nature -> Kaenic Rookern",
+    "RuneSetup": "Grasp of the Undying + Precision (Presence of Mind / Legend: Haste)"
+  },
+  {
+    "ChampionName": "Darius",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Stridebreaker -> Trinity Force -> Dead Man's Plate -> Sterak's Gage -> Force of Nature",
+    "RuneSetup": "Conqueror + Sorcery (Nimbus Cloak / Celerity)"
+  },
+  {
+    "ChampionName": "Dr. Mundo",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Warmog's Armor -> Sunfire Aegis -> Thornmail -> Spirit Visage",
+    "RuneSetup": "Grasp of the Undying + Inspiration (Magical Footwear / Approach Velocity)"
+  },
+  {
+    "ChampionName": "Fiora",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Ravenous Hydra -> Trinity Force -> Eclipse -> Sterak's Gage -> Maw of Malmortius",
+    "RuneSetup": "Conqueror + Resolve (Bone Plating / Demolish)"
+  },
+  {
+    "ChampionName": "Gangplank",
+    "Role": "Top",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Trinity Force -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Essence Reaver",
+    "RuneSetup": "First Strike + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Garen",
+    "Role": "Top",
+    "CoreItemBuild": "Berserker's Greaves -> Stridebreaker -> Phantom Dancer -> Infinity Edge -> Dead Man's Plate -> Sterak's Gage",
+    "RuneSetup": "Phase Rush + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Gnar",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Black Cleaver -> Sterak's Gage -> Thornmail -> Force of Nature",
+    "RuneSetup": "Fleet Footwork + Resolve (Bone Plating / Overgrowth)"
+  },
+  {
+    "ChampionName": "Gragas",
+    "Role": "Top",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rod of Ages -> Archangel's Staff -> Lich Bane -> Zhonya's Hourglass -> Shadowflame",
+    "RuneSetup": "Phase Rush + Resolve (Manaflow Band / Second Wind)"
+  },
+  {
+    "ChampionName": "Gwen",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Nashor's Tooth -> Riftmaker -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Conqueror + Resolve (Bone Plating / Unflinching)"
+  },
+  {
+    "ChampionName": "Illaoi",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Sundered Sky -> Black Cleaver -> Sterak's Gage -> Iceborn Gauntlet -> Spirit Visage",
+    "RuneSetup": "Grasp of the Undying + Precision (Presence of Mind / Last Stand)"
+  },
+  {
+    "ChampionName": "Irelia",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Blade of the Ruined King -> Sundered Sky -> Wit's End -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Conqueror + Inspiration (Biscuit Delivery / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Jax",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Sundered Sky -> Frozen Heart -> Sterak's Gage -> Kaenic Rookern",
+    "RuneSetup": "Grasp of the Undying + Inspiration (Biscuit Delivery / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Jayce",
+    "Role": "Top",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Eclipse -> Manamune -> Serylda's Grudge -> Opportunity -> Edge of Night",
+    "RuneSetup": "Phase Rush + Inspiration (Magical Footwear / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "K'Sante",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Iceborn Gauntlet -> Jak'Sho -> Sunfire Aegis -> Thornmail -> Kaenic Rookern",
+    "RuneSetup": "Grasp of the Undying + Precision (Triumph / Legend: Haste)"
+  },
+  {
+    "ChampionName": "Kayle",
+    "Role": "Top",
+    "CoreItemBuild": "Berserker's Greaves -> Nashor's Tooth -> Riftmaker -> Shadowflame -> Rabadon's Deathcap -> Zhonya's Hourglass",
+    "RuneSetup": "Fleet Footwork + Sorcery (Gathering Storm / Absolute Focus)"
+  },
+  {
+    "ChampionName": "Kennen",
+    "Role": "Top",
+    "CoreItemBuild": "Sorcerer's Shoes -> Hextech Rocketbelt -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Summon Aery + Domination (Taste of Blood / Ultimate Hunter)"
+  },
+  {
+    "ChampionName": "Kled",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Profane Hydra -> Eclipse -> Mortal Reminder -> Death's Dance -> Maw of Malmortius",
+    "RuneSetup": "Conqueror + Resolve (Demolish / Bone Plating)"
+  },
+  {
+    "ChampionName": "Malphite",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Sunfire Aegis -> Thornmail -> Hollow Radiance -> Iceborn Gauntlet -> Kaenic Rookern",
+    "RuneSetup": "Arcane Comet + Resolve (Manaflow Band / Second Wind)"
+  },
+  {
+    "ChampionName": "Mordekaiser",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Rylai's Crystal Scepter -> Riftmaker -> Liandry's Torment -> Jak'Sho -> Zhonya's Hourglass",
+    "RuneSetup": "Conqueror + Resolve (Revitalize / Bone Plating)"
+  },
+  {
+    "ChampionName": "Nasus",
+    "Role": "Top",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Trinity Force -> Frozen Heart -> Spirit Visage -> Sterak's Gage -> Jak'Sho",
+    "RuneSetup": "Fleet Footwork + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Olaf",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Ravenous Hydra -> Trinity Force -> Sterak's Gage -> Death's Dance -> Spirit Visage",
+    "RuneSetup": "Conqueror + Inspiration (Approach Velocity / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Ornn",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Sunfire Aegis -> Heartsteel -> Jak'Sho -> Thornmail -> Kaenic Rookern",
+    "RuneSetup": "Grasp of the Undying + Inspiration (Biscuit Delivery / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Pantheon",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Eclipse -> Sundered Sky -> Black Cleaver -> Sterak's Gage -> Death's Dance",
+    "RuneSetup": "Press the Attack + Domination (Sudden Impact / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Poppy",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Sunfire Aegis -> Iceborn Gauntlet -> Thornmail -> Kaenic Rookern -> Dead Man's Plate",
+    "RuneSetup": "Grasp of the Undying + Inspiration (Biscuit Delivery / Time Warp Tonic)"
+  },
+  {
+    "ChampionName": "Quinn",
+    "Role": "Top",
+    "CoreItemBuild": "Berserker's Greaves -> Youmuu's Ghostblade -> The Collector -> Lord Dominik's Regards -> Infinity Edge -> Edge of Night",
+    "RuneSetup": "Fleet Footwork + Sorcery (Celerity / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Renekton",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Eclipse -> Sundered Sky -> Sterak's Gage -> Black Cleaver -> Guardian Angel",
+    "RuneSetup": "Press the Attack + Resolve (Bone Plating / Demolish)"
+  },
+  {
+    "ChampionName": "Riven",
+    "Role": "Top",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Eclipse -> Sundered Sky -> Death's Dance -> Maw of Malmortius -> Serylda's Grudge",
+    "RuneSetup": "Conqueror + Sorcery (Nimbus Cloak / Transcendence)"
+  },
+  {
+    "ChampionName": "Rumble",
+    "Role": "Top",
+    "CoreItemBuild": "Sorcerer's Shoes -> Liandry's Torment -> Riftmaker -> Zhonya's Hourglass -> Shadowflame -> Void Staff",
+    "RuneSetup": "Arcane Comet + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Sett",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Stridebreaker -> Hullbreaker -> Sterak's Gage -> Titanic Hydra -> Overlord's Bloodmail",
+    "RuneSetup": "Conqueror + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Shen",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Hollow Radiance -> Thornmail -> Titanic Hydra -> Kaenic Rookern",
+    "RuneSetup": "Grasp of the Undying + Precision (Presence of Mind / Legend: Haste)"
+  },
+  {
+    "ChampionName": "Singed",
+    "Role": "Top",
+    "CoreItemBuild": "Boots of Swiftness -> Rylai's Crystal Scepter -> Liandry's Torment -> Dead Man's Plate -> Riftmaker -> Force of Nature",
+    "RuneSetup": "Conqueror + Resolve (Second Wind / Unflinching)"
+  },
+  {
+    "ChampionName": "Sion",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Sunfire Aegis -> Titanic Hydra -> Thornmail -> Hollow Radiance",
+    "RuneSetup": "Grasp of the Undying + Inspiration (Demolish / Approach Velocity)"
+  },
+  {
+    "ChampionName": "Tahm Kench",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Sunfire Aegis -> Thornmail -> Spirit Visage -> Warmog's Armor",
+    "RuneSetup": "Grasp of the Undying + Precision (Triumph / Legend: Alacrity)"
+  },
+  {
+    "ChampionName": "Teemo",
+    "Role": "Top",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Liandry's Torment -> Shadowflame -> Nashor's Tooth -> Rabadon's Deathcap",
+    "RuneSetup": "Press the Attack + Domination (Taste of Blood / Ultimate Hunter)"
+  },
+  {
+    "ChampionName": "Trundle",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Ravenous Hydra -> Blade of the Ruined King -> Sterak's Gage -> Hullbreaker",
+    "RuneSetup": "Lethal Tempo + Resolve (Demolish / Bone Plating)"
+  },
+  {
+    "ChampionName": "Tryndamere",
+    "Role": "Top",
+    "CoreItemBuild": "Berserker's Greaves -> Ravenous Hydra -> Phantom Dancer -> Infinity Edge -> Lord Dominik's Regards -> Navori Quickblades",
+    "RuneSetup": "Lethal Tempo + Resolve (Second Wind / Unflinching)"
+  },
+  {
+    "ChampionName": "Urgot",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Black Cleaver -> Hullbreaker -> Sterak's Gage -> Jak'Sho -> Thornmail",
+    "RuneSetup": "Press the Attack + Resolve (Shield Bash / Bone Plating)"
+  },
+  {
+    "ChampionName": "Volibear",
+    "Role": "Top",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Rod of Ages -> Navori Quickblades -> Riftmaker -> Spirit Visage -> Frozen Heart",
+    "RuneSetup": "Grasp of the Undying + Precision (Presence of Mind / Legend: Haste)"
+  },
+  {
+    "ChampionName": "Warwick",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Blade of the Ruined King -> Titanic Hydra -> Iceborn Gauntlet -> Spirit Visage -> Thornmail",
+    "RuneSetup": "Lethal Tempo + Resolve (Second Wind / Revitalize)"
+  },
+  {
+    "ChampionName": "Wukong",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Sundered Sky -> Black Cleaver -> Sterak's Gage -> Death's Dance",
+    "RuneSetup": "Conqueror + Inspiration (Magical Footwear / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Yasuo",
+    "Role": "Top",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Infinity Edge -> Immortal Shieldbow -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Lethal Tempo + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Yone",
+    "Role": "Top",
+    "CoreItemBuild": "Berserker's Greaves -> Blade of the Ruined King -> Infinity Edge -> Immortal Shieldbow -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Lethal Tempo + Resolve (Second Wind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Yorick",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Profane Hydra -> Serylda's Grudge -> Hullbreaker -> Sterak's Gage",
+    "RuneSetup": "Conqueror + Resolve (Demolish / Bone Plating)"
+  },
+  {
+    "ChampionName": "Zaahen",
+    "Role": "Top",
+    "CoreItemBuild": "Plated Steelcaps -> Trinity Force -> Stridebreaker -> Death's Dance -> Endless Hunger -> Guardian Angel",
+    "RuneSetup": "Conqueror + Resolve (Bone Plating / Revitalize)"
+  },
+  {
+    "ChampionName": "Amumu",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Sunfire Aegis -> Liandry's Torment -> Thornmail -> Abyssal Mask -> Jak'Sho",
+    "RuneSetup": "Conqueror + Domination (Cheap Shot / Ultimate Hunter)"
+  },
+  {
+    "ChampionName": "Bel'Veth",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Kraken Slayer -> Stridebreaker -> Terminus -> Death's Dance -> Wit's End",
+    "RuneSetup": "Conqueror + Inspiration (Magical Footwear / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Briar",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Eclipse -> Sundered Sky -> Black Cleaver -> Death's Dance -> Sterak's Gage",
+    "RuneSetup": "Press the Attack + Domination (Sudden Impact / Treasure Hunter)"
+  },
+  {
+    "ChampionName": "Diana",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Nashor's Tooth -> Stormsurge -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Conqueror + Inspiration (Magical Footwear / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Ekko",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Nashor's Tooth -> Rabadon's Deathcap -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "Dark Harvest + Inspiration (Sudden Impact / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Elise",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Shadowflame -> Stormsurge -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Precision (Cheap Shot / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Evelynn",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Shadowflame -> Rabadon's Deathcap -> Mejai's Soulstealer -> Void Staff",
+    "RuneSetup": "Electrocute + Sorcery (Sudden Impact / Absolute Focus)"
+  },
+  {
+    "ChampionName": "Fiddlesticks",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Liandry's Torment -> Zhonya's Hourglass -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "First Strike + Domination (Triple Tonic / Ultimate Hunter)"
+  },
+  {
+    "ChampionName": "Graves",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Youmuu's Ghostblade -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Fleet Footwork + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Hecarim",
+    "Role": "Jungle",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Spear of Shojin -> Manamune -> Black Cleaver -> Sterak's Gage -> Death's Dance",
+    "RuneSetup": "Phase Rush + Precision (Nimbus Cloak / Triumph)"
+  },
+  {
+    "ChampionName": "Ivern",
+    "Role": "Jungle",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Shurelya's Battlesong -> Staff of Flowing Water -> Redemption -> Dawncore",
+    "RuneSetup": "Summon Aery + Inspiration (Future's Market / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Jarvan IV",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Sundered Sky -> Eclipse -> Frozen Heart -> Maw of Malmortius -> Guardian Angel",
+    "RuneSetup": "Conqueror + Domination (Triumph / Eyeball Collection)"
+  },
+  {
+    "ChampionName": "Karthus",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Shadowflame -> Liandry's Torment -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Dark Harvest + Precision (Cheap Shot / Ultimate Hunter)"
+  },
+  {
+    "ChampionName": "Kayn",
+    "Role": "Jungle",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Profane Hydra -> Opportunity -> Serylda's Grudge -> Edge of Night -> Axiom Arc",
+    "RuneSetup": "Dark Harvest + Precision (Sudden Impact / Eyeball Collection)"
+  },
+  {
+    "ChampionName": "Kha'Zix",
+    "Role": "Jungle",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Profane Hydra -> Youmuu's Ghostblade -> Edge of Night -> Serylda's Grudge -> Guardian Angel",
+    "RuneSetup": "Dark Harvest + Inspiration (Sudden Impact / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Kindred",
+    "Role": "Jungle",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Trinity Force -> Terminus -> Wit's End -> Guardian Angel",
+    "RuneSetup": "Press the Attack + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Lee Sin",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Eclipse -> Sundered Sky -> Black Cleaver -> Sterak's Gage -> Death's Dance",
+    "RuneSetup": "Conqueror + Inspiration (Triumph / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Lillia",
+    "Role": "Jungle",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Liandry's Torment -> Riftmaker -> Rylai's Crystal Scepter -> Zhonya's Hourglass -> Jak'Sho",
+    "RuneSetup": "Conqueror + Domination (Eyeball Collection / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Master Yi",
+    "Role": "Jungle",
+    "CoreItemBuild": "Berserker's Greaves -> Blade of the Ruined King -> Guinsoo's Rageblade -> Kraken Slayer -> Wit's End -> Death's Dance",
+    "RuneSetup": "Lethal Tempo + Domination (Triumph / Eyeball Collection)"
+  },
+  {
+    "ChampionName": "Nidalee",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Shadowflame -> Stormsurge -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "Dark Harvest + Inspiration (Sudden Impact / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Nocturne",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Stridebreaker -> Experimental Hexplate -> Black Cleaver -> Sterak's Gage -> Guardian Angel",
+    "RuneSetup": "Conqueror + Domination (Triumph / Ultimate Hunter)"
+  },
+  {
+    "ChampionName": "Nunu & Willump",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Sunfire Aegis -> Dead Man's Plate -> Hollow Radiance -> Thornmail -> Force of Nature",
+    "RuneSetup": "Phase Rush + Precision (Waterwalking / Celerity / Triumph)"
+  },
+  {
+    "ChampionName": "Rammus",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Thornmail -> Sunfire Aegis -> Dead Man's Plate -> Jak'Sho -> Force of Nature",
+    "RuneSetup": "Aftershock + Precision (Triumph / Legend: Alacrity)"
+  },
+  {
+    "ChampionName": "Rek'Sai",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Titanic Hydra -> Black Cleaver -> Sterak's Gage -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Conqueror + Inspiration (Magical Footwear / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Rengar",
+    "Role": "Jungle",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Profane Hydra -> Hubris -> Opportunity -> Serylda's Grudge -> Edge of Night",
+    "RuneSetup": "Electrocute + Precision (Sudden Impact / Eyeball Collection)"
+  },
+  {
+    "ChampionName": "Sejuani",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Sunfire Aegis -> Thornmail -> Kaenic Rookern -> Jak'Sho",
+    "RuneSetup": "Aftershock + Precision (Font of Life / Triumph)"
+  },
+  {
+    "ChampionName": "Shaco",
+    "Role": "Jungle",
+    "CoreItemBuild": "Berserker's Greaves -> Youmuu's Ghostblade -> Profane Hydra -> Infinity Edge -> Lord Dominik's Regards -> The Collector",
+    "RuneSetup": "Hail of Blades + Precision (Sudden Impact / Legend: Alacrity)"
+  },
+  {
+    "ChampionName": "Shyvana",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Spear of Shojin -> Liandry's Torment -> Riftmaker -> Cosmic Drive -> Rabadon's Deathcap",
+    "RuneSetup": "Press the Attack + Inspiration (Magical Footwear / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Skarner",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Heartsteel -> Sunfire Aegis -> Thornmail -> Kaenic Rookern -> Overlord's Bloodmail",
+    "RuneSetup": "Aftershock + Inspiration (Magical Footwear / Approach Velocity)"
+  },
+  {
+    "ChampionName": "Taliyah",
+    "Role": "Jungle",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "First Strike + Domination (Magical Footwear / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Udyr",
+    "Role": "Jungle",
+    "CoreItemBuild": "Boots of Swiftness -> Liandry's Torment -> Dead Man's Plate -> Force of Nature -> Frozen Heart -> Jak'Sho",
+    "RuneSetup": "Conqueror + Inspiration (Magical Footwear / Approach Velocity)"
+  },
+  {
+    "ChampionName": "Vi",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Eclipse -> Sundered Sky -> Black Cleaver -> Sterak's Gage -> Guardian Angel",
+    "RuneSetup": "Conqueror + Domination (Triumph / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Viego",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Kraken Slayer -> Sundered Sky -> Trinity Force -> Sterak's Gage -> Guardian Angel",
+    "RuneSetup": "Conqueror + Inspiration (Triumph / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Xin Zhao",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Sundered Sky -> Titanic Hydra -> Sterak's Gage -> Death's Dance -> Guardian Angel",
+    "RuneSetup": "Conqueror + Inspiration (Triumph / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Zac",
+    "Role": "Jungle",
+    "CoreItemBuild": "Plated Steelcaps -> Sunfire Aegis -> Radiant Virtue -> Thornmail -> Spirit Visage -> Abyssal Mask",
+    "RuneSetup": "Aftershock + Precision (Revitalize / Triumph)"
+  },
+  {
+    "ChampionName": "Ahri",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Horizon Focus -> Shadowflame -> Rabadon's Deathcap -> Zhonya's Hourglass",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Anivia",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rod of Ages -> Archangel's Staff -> Liandry's Torment -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Precision (Manaflow Band / Presence of Mind)"
+  },
+  {
+    "ChampionName": "Annie",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Shadowflame -> Stormsurge -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Aurelion Sol",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rylai's Crystal Scepter -> Liandry's Torment -> Riftmaker -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "First Strike + Resolve (Magical Footwear / Overgrowth)"
+  },
+  {
+    "ChampionName": "Aurora",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Shadowflame -> Stormsurge -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Scorch)"
+  },
+  {
+    "ChampionName": "Azir",
+    "Role": "Mid",
+    "CoreItemBuild": "Berserker's Greaves -> Nashor's Tooth -> Shadowflame -> Rabadon's Deathcap -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "Conqueror + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Cassiopeia",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Archangel's Staff -> Rylai's Crystal Scepter -> Liandry's Torment -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Conqueror + Domination (Presence of Mind / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Corki",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Trinity Force -> Manamune -> Shadowflame -> Void Staff -> Rabadon's Deathcap",
+    "RuneSetup": "First Strike + Sorcery (Magical Footwear / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Fizz",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Stormsurge -> Zhonya's Hourglass -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Precision (Sudden Impact / Triumph)"
+  },
+  {
+    "ChampionName": "Galio",
+    "Role": "Mid",
+    "CoreItemBuild": "Mercury's Treads -> Hollow Radiance -> Riftmaker -> Thornmail -> Kaenic Rookern -> Jak'Sho",
+    "RuneSetup": "Aftershock + Sorcery (Shield Bash / Nimbus Cloak)"
+  },
+  {
+    "ChampionName": "Heimerdinger",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Liandry's Torment -> Rylai's Crystal Scepter -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Arcane Comet + Domination (Manaflow Band / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Hwei",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Horizon Focus -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "First Strike + Sorcery (Biscuit Delivery / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Kassadin",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rod of Ages -> Archangel's Staff -> Malignance -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Fleet Footwork + Resolve (Presence of Mind / Second Wind)"
+  },
+  {
+    "ChampionName": "Katarina",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Nashor's Tooth -> Lich Bane -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Conqueror + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "LeBlanc",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Shadowflame -> Stormsurge -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Lissandra",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Malignance -> Zhonya's Hourglass -> Shadowflame -> Stormsurge -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Manaflow Band / Transcendence)"
+  },
+   {
+    "ChampionName": "Locke",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Shadowflame -> Zhonya's Hourglass -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Electrocute + Resolve (Bone Plating / Revitalize)"
+  },
+  {
+    "ChampionName": "Lux",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Horizon Focus -> Shadowflame -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Arcane Comet + Domination (Manaflow Band / Cheap Shot)"
+  },
+  {
+    "ChampionName": "Malzahar",
+    "Role": "Mid",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Malignance -> Rylai's Crystal Scepter -> Liandry's Torment -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "Arcane Comet + Precision (Manaflow Band / Presence of Mind)"
+  },
+  {
+    "ChampionName": "Mel",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Shadowflame -> Horizon Focus -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Arcane Comet + Domination (Manaflow Band / Cheap Shot)"
+  },
+  {
+    "ChampionName": "Naafiri",
+    "Role": "Mid",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Eclipse -> Profane Hydra -> Serylda's Grudge -> Edge of Night -> Opportunity",
+    "RuneSetup": "First Strike + Domination (Magical Footwear / Eyeball Collection)"
+  },
+  {
+    "ChampionName": "Neeko",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Hextech Rocketbelt -> Shadowflame -> Zhonya's Hourglass -> Stormsurge -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Orianna",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Archangel's Staff -> Shadowflame -> Rabadon's Deathcap -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "Phase Rush + Inspiration (Manaflow Band / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Qiyana",
+    "Role": "Mid",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Profane Hydra -> Opportunity -> Serylda's Grudge -> Edge of Night -> Axiom Arc",
+    "RuneSetup": "First Strike + Precision (Sudden Impact / Triumph)"
+  },
+  {
+    "ChampionName": "Ryze",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rod of Ages -> Archangel's Staff -> Frozen Heart -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Phase Rush + Domination (Manaflow Band / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Swain",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rylai's Crystal Scepter -> Liandry's Torment -> Riftmaker -> Zhonya's Hourglass -> Jak'Sho",
+    "RuneSetup": "Conqueror + Resolve (Presence of Mind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Sylas",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Stormsurge -> Zhonya's Hourglass -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "Conqueror + Resolve (Presence of Mind / Second Wind)"
+  },
+  {
+    "ChampionName": "Syndra",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Horizon Focus -> Stormsurge -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "First Strike + Sorcery (Biscuit Delivery / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Talon",
+    "Role": "Mid",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Profane Hydra -> Youmuu's Ghostblade -> Edge of Night -> Serylda's Grudge -> Opportunity",
+    "RuneSetup": "Electrocute + Sorcery (Sudden Impact / Nimbus Cloak)"
+  },
+  {
+    "ChampionName": "Twisted Fate",
+    "Role": "Mid",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Rod of Ages -> Lich Bane -> Rapid Firecannon -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "First Strike + Sorcery (Magical Footwear / Transcendence)"
+  },
+  {
+    "ChampionName": "Veigar",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Archangel's Staff -> Stormsurge -> Rabadon's Deathcap -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "First Strike + Sorcery (Manaflow Band / Transcendence)"
+  },
+  {
+    "ChampionName": "Vel'Koz",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Horizon Focus -> Shadowflame -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Arcane Comet + Domination (Manaflow Band / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Vex",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Shadowflame -> Stormsurge -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Viktor",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Lich Bane -> Shadowflame -> Rabadon's Deathcap -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "First Strike + Sorcery (Manaflow Band / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Vladimir",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Cosmic Drive -> Stormsurge -> Rabadon's Deathcap -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "Phase Rush + Inspiration (Nimbus Cloak / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Xerath",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Horizon Focus -> Shadowflame -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "First Strike + Sorcery (Manaflow Band / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Zed",
+    "Role": "Mid",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Eclipse -> Opportunity -> Serylda's Grudge -> Edge of Night -> Axiom Arc",
+    "RuneSetup": "Electrocute + Sorcery (Taste of Blood / Scorch)"
+  },
+  {
+    "ChampionName": "Ziggs",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Horizon Focus -> Shadowflame -> Rabadon's Deathcap -> Void Staff",
+    "RuneSetup": "Arcane Comet + Precision (Manaflow Band / Presence of Mind)"
+  },
+  {
+    "ChampionName": "Zoe",
+    "Role": "Mid",
+    "CoreItemBuild": "Sorcerer's Shoes -> Luden's Companion -> Stormsurge -> Horizon Focus -> Shadowflame -> Rabadon's Deathcap",
+    "RuneSetup": "Electrocute + Sorcery (Sudden Impact / Manaflow Band)"
+  },
+  {
+    "ChampionName": "Akshan",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Rapid Firecannon",
+    "RuneSetup": "Press the Attack + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Aphelios",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster -> Immortal Shieldbow",
+    "RuneSetup": "Press the Attack + Sorcery (Triumph / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Ashe",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Trinity Force -> Terminus -> Runaan's Hurricane -> Blade of the Ruined King",
+    "RuneSetup": "Lethal Tempo + Inspiration (Approach Velocity / Magical Footwear)"
+  },
+  {
+    "ChampionName": "Caitlyn",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> The Collector -> Infinity Edge -> Rapid Firecannon -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "First Strike + Sorcery (Magical Footwear / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Draven",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Hubris -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Press the Attack + Sorcery (Triumph / Celerity)"
+  },
+  {
+    "ChampionName": "Ezreal",
+    "Role": "ADC",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Trinity Force -> Manamune -> Serylda's Grudge -> Spear of Shojin -> Bloodthirster",
+    "RuneSetup": "Conqueror + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Jhin",
+    "Role": "ADC",
+    "CoreItemBuild": "Boots of Swiftness -> The Collector -> Infinity Edge -> Rapid Firecannon -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Fleet Footwork + Sorcery (Presence of Mind / Celerity)"
+  },
+  {
+    "ChampionName": "Jinx",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Runaan's Hurricane -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Lethal Tempo + Sorcery (Presence of Mind / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Kai'Sa",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Statikk Shiv -> Guinsoo's Rageblade -> Nashor's Tooth -> Zhonya's Hourglass -> Rabadon's Deathcap",
+    "RuneSetup": "Lethal Tempo + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Kalista",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Blade of the Ruined King -> Guinsoo's Rageblade -> Terminus -> Runaan's Hurricane -> Immortal Shieldbow",
+    "RuneSetup": "Lethal Tempo + Domination (Triumph / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Kog'Maw",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Blade of the Ruined King -> Guinsoo's Rageblade -> Terminus -> Runaan's Hurricane -> Randuin's Omen",
+    "RuneSetup": "Lethal Tempo + Resolve (Presence of Mind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Lucian",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Essence Reaver -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Press the Attack + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Miss Fortune",
+    "Role": "ADC",
+    "CoreItemBuild": "Boots of Swiftness -> Youmuu's Ghostblade -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "First Strike + Sorcery (Magical Footwear / Gathering Storm)"
+  },
+  {
+    "ChampionName": "Nilah",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> The Collector -> Navori Quickblades -> Infinity Edge -> Lord Dominik's Regards -> Death's Dance",
+    "RuneSetup": "Conqueror + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Samira",
+    "Role": "ADC",
+    "CoreItemBuild": "Plated Steelcaps -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster -> Immortal Shieldbow",
+    "RuneSetup": "Conqueror + Domination (Triumph / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Sivir",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Statikk Shiv -> Navori Quickblades -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Lethal Tempo + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Smolder",
+    "Role": "ADC",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Essence Reaver -> Spear of Shojin -> Rapid Firecannon -> Bloodthirster -> Mortal Reminder",
+    "RuneSetup": "Fleet Footwork + Resolve (Presence of Mind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Tristana",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Navori Quickblades -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Press the Attack + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Twitch",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Blade of the Ruined King -> Runaan's Hurricane -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Press the Attack + Domination (Presence of Mind / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Varus",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Blade of the Ruined King -> Guinsoo's Rageblade -> Terminus -> Runaan's Hurricane -> Wit's End",
+    "RuneSetup": "Lethal Tempo + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Vayne",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Blade of the Ruined King -> Guinsoo's Rageblade -> Terminus -> Jak'Sho",
+    "RuneSetup": "Lethal Tempo + Domination (Triumph / Taste of Blood)"
+  },
+  {
+    "ChampionName": "Xayah",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> Navori Quickblades -> Infinity Edge -> Lord Dominik's Regards -> Bloodthirster",
+    "RuneSetup": "Lethal Tempo + Inspiration (Presence of Mind / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Yunara",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Kraken Slayer -> The Collector -> Infinity Edge -> Lord Dominik's Regards -> Immortal Shieldbow",
+    "RuneSetup": "Lethal Tempo + Domination (Triumph / Sudden Impact)"
+  },
+  {
+    "ChampionName": "Zeri",
+    "Role": "ADC",
+    "CoreItemBuild": "Berserker's Greaves -> Statikk Shiv -> Navori Quickblades -> Infinity Edge -> Lord Dominik's Regards -> Immortal Shieldbow",
+    "RuneSetup": "Lethal Tempo + Resolve (Presence of Mind / Overgrowth)"
+  },
+  {
+    "ChampionName": "Alistar",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Trailblazer -> Knight's Vow -> Locket of the Iron Solari -> Thornmail -> Kaenic Rookern",
+    "RuneSetup": "Aftershock + Inspiration (Hextech Flashtraption / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Bard",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Locket of the Iron Solari -> Dead Man's Plate -> Frozen Heart -> Kaenic Rookern -> Trailblazer",
+    "RuneSetup": "Fleet Footwork + Resolve (Font of Life / Overgrowth)"
+  },
+  {
+    "ChampionName": "Blitzcrank",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Trailblazer -> Frozen Heart -> Locket of the Iron Solari -> Thornmail -> Kaenic Rookern",
+    "RuneSetup": "Glacial Augment + Resolve (Hextech Flashtraption / Bone Plating)"
+  },
+  {
+    "ChampionName": "Brand",
+    "Role": "Support",
+    "CoreItemBuild": "Sorcerer's Shoes -> Rylai's Crystal Scepter -> Liandry's Torment -> Morellonomicon -> Zhonya's Hourglass -> Void Staff",
+    "RuneSetup": "Dark Harvest + Precision (Taste of Blood / Presence of Mind)"
+  },
+  {
+    "ChampionName": "Braum",
+    "Role": "Support",
+    "CoreItemBuild": "Plated Steelcaps -> Locket of the Iron Solari -> Knight's Vow -> Thornmail -> Frozen Heart -> Kaenic Rookern",
+    "RuneSetup": "Guardian + Inspiration (Font of Life / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Janna",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Moonstone Renewer -> Redemption -> Shurelya's Battlesong -> Ardent Censer -> Dawncore",
+    "RuneSetup": "Summon Aery + Domination (Manaflow Band / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Karma",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Malignance -> Moonstone Renewer -> Ardent Censer -> Shurelya's Battlesong -> Dawncore",
+    "RuneSetup": "Arcane Comet + Inspiration (Manaflow Band / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Leona",
+    "Role": "Support",
+    "CoreItemBuild": "Plated Steelcaps -> Locket of the Iron Solari -> Knight's Vow -> Thornmail -> Trailblazer -> Kaenic Rookern",
+    "RuneSetup": "Aftershock + Inspiration (Font of Life / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Lulu",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Shurelya's Battlesong -> Ardent Censer -> Redemption -> Dawncore",
+    "RuneSetup": "Summon Aery + Inspiration (Manaflow Band / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Maokai",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Trailblazer -> Locket of the Iron Solari -> Knight's Vow -> Thornmail -> Hollow Radiance",
+    "RuneSetup": "Aftershock + Inspiration (Font of Life / Hextech Flashtraption)"
+  },
+  {
+    "ChampionName": "Milio",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Dream Maker -> Staff of Flowing Water -> Shurelya's Battlesong -> Dawncore",
+    "RuneSetup": "Summon Aery + Inspiration (Manaflow Band / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Morgana",
+    "Role": "Support",
+    "CoreItemBuild": "Sorcerer's Shoes -> Zhonya's Hourglass -> Rylai's Crystal Scepter -> Morellonomicon -> Liandry's Torment -> Cryptbloom",
+    "RuneSetup": "Arcane Comet + Domination (Manaflow Band / Cheap Shot)"
+  },
+  {
+    "ChampionName": "Nami",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Imperial Mandate -> Moonstone Renewer -> Staff of Flowing Water -> Shurelya's Battlesong -> Dawncore",
+    "RuneSetup": "Summon Aery + Inspiration (Manaflow Band / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Nautilus",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Locket of the Iron Solari -> Knight's Vow -> Thornmail -> Trailblazer -> Kaenic Rookern",
+    "RuneSetup": "Glacial Augment + Resolve (Hextech Flashtraption / Bone Plating)"
+  },
+  {
+    "ChampionName": "Pyke",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Mobility -> Bloodsong -> Umbral Glaive -> Opportunity -> Edge of Night -> Guardian Angel",
+    "RuneSetup": "Hail of Blades + Precision (Sudden Impact / Triumph)"
+  },
+  {
+    "ChampionName": "Rakan",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Shurelya's Battlesong -> Trailblazer -> Zeke's Convergence -> Knight's Vow -> Locket of the Iron Solari",
+    "RuneSetup": "Glacial Augment + Resolve (Cosmic Insight / Bone Plating)"
+  },
+  {
+    "ChampionName": "Rell",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Trailblazer -> Locket of the Iron Solari -> Knight's Vow -> Thornmail -> Kaenic Rookern",
+    "RuneSetup": "Glacial Augment + Resolve (Hextech Flashtraption / Bone Plating)"
+  },
+  {
+    "ChampionName": "Renata Glasc",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Locket of the Iron Solari -> Redemption -> Knight's Vow -> Shurelya's Battlesong -> Frozen Heart",
+    "RuneSetup": "Guardian + Inspiration (Font of Life / Biscuit Delivery)"
+  },
+  {
+    "ChampionName": "Senna",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Black Cleaver -> Rapid Firecannon -> Lord Dominik's Regards -> Infinity Edge -> Bloodthirster",
+    "RuneSetup": "Fleet Footwork + Precision (Presence of Mind / Cut Down)"
+  },
+  {
+    "ChampionName": "Seraphine",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Staff of Flowing Water -> Redemption -> Rylai's Crystal Scepter -> Dawncore",
+    "RuneSetup": "Summon Aery + Inspiration (Manaflow Band / Cosmic Insight)"
+  },
+  {
+    "ChampionName": "Sona",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Archangel's Staff -> Staff of Flowing Water -> Ardent Censer -> Dawncore",
+    "RuneSetup": "Summon Aery + Precision (Manaflow Band / Presence of Mind)"
+  },
+  {
+    "ChampionName": "Soraka",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Redemption -> Warmog's Armor -> Staff of Flowing Water -> Dawncore",
+    "RuneSetup": "Summon Aery + Resolve (Manaflow Band / Revitalize)"
+  },
+  {
+    "ChampionName": "Taric",
+    "Role": "Support",
+    "CoreItemBuild": "Plated Steelcaps -> Locket of the Iron Solari -> Knight's Vow -> Frozen Heart -> Thornmail -> Spirit Visage",
+    "RuneSetup": "Glacial Augment + Precision (Presence of Mind / Legend: Haste)"
+  },
+  {
+    "ChampionName": "Thresh",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Locket of the Iron Solari -> Knight's Vow -> Trailblazer -> Thornmail -> Kaenic Rookern",
+    "RuneSetup": "Glacial Augment + Resolve (Hextech Flashtraption / Bone Plating)"
+  },
+  {
+    "ChampionName": "Yuumi",
+    "Role": "Support",
+    "CoreItemBuild": "Ionian Boots of Lucidity -> Moonstone Renewer -> Dawncore -> Staff of Flowing Water -> Ardent Censer -> Mikael's Blessing",
+    "RuneSetup": "Summon Aery + Resolve (Manaflow Band / Revitalize)"
+  },
+  {
+    "ChampionName": "Zilean",
+    "Role": "Support",
+    "CoreItemBuild": "Boots of Swiftness -> Shurelya's Battlesong -> Warmog's Armor -> Trailblazer -> Frozen Heart -> Kaenic Rookern",
+    "RuneSetup": "Summon Aery + Domination (Manaflow Band / Relentless Hunter)"
+  },
+  {
+    "ChampionName": "Zyra",
+    "Role": "Support",
+    "CoreItemBuild": "Sorcerer's Shoes -> Liandry's Torment -> Rylai's Crystal Scepter -> Morellonomicon -> Cryptbloom -> Zhonya's Hourglass",
+    "RuneSetup": "Arcane Comet + Domination (Manaflow Band / Relentless Hunter)"
+  }
+]

@@ -4,43 +4,87 @@
     ViewData["Title"] = "Керування Actions (Matchup Guides)";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <h2><i class="bi bi-journal-text text-warning"></i> Тактичні гайди дій (Actions)</h2>
-    <a asp-action="Create" class="btn btn-warning text-dark fw-bold">
-        <i class="bi bi-plus-circle"></i> Створити гайд
-    </a>
+<!-- Сповіщення про результати операцій -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i> @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["InfoMessage"] != null)
+{
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <i class="bi bi-info-circle-fill me-2"></i> @TempData["InfoMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div>
+        <h2 class="mb-0"><i class="bi bi-journal-text text-warning"></i> Тактичні гайди дій (Actions)</h2>
+        <span class="text-secondary small">Усього гайдів у системі: <strong>@Model.Count()</strong></span>
+    </div>
+
+    <div class="d-flex flex-wrap gap-2">
+        <!-- 1. Кнопка швидкого автоімпорту тактик Mobalytics в 1 клік -->
+        <form asp-action="SeedMobalyticsActions" method="post" class="d-inline">
+            <button type="submit" class="btn btn-warning text-dark fw-bold shadow-sm" onclick="return confirm('Завантажити тактичні гайди для чемпіонів із Mobalytics?');">
+                <i class="bi bi-lightning-charge-fill"></i> Автоімпорт тактик Mobalytics
+            </button>
+        </form>
+
+        <!-- 2. Кнопка відкриття модального вікна для власного файлу -->
+        <button type="button" class="btn btn-outline-info shadow-sm" data-bs-toggle="modal" data-bs-target="#importActionsModal">
+            <i class="bi bi-file-earmark-arrow-up"></i> Завантажити JSON
+        </button>
+
+        <!-- 3. Звичайна кнопка створення окремого запису -->
+        <a asp-action="Create" class="btn btn-primary shadow-sm">
+            <i class="bi bi-plus-circle"></i> Створити гайд
+        </a>
+    </div>
 </div>
 
 <div class="card card-custom">
-    <div class="card-body p-0 table-responsive">
+    <div class="card-body p-0 table-responsive" style="max-height: 700px; overflow-y: auto;">
         <table class="table table-custom table-hover align-middle mb-0">
-            <thead>
+            <thead class="sticky-top bg-dark">
                 <tr>
-                    <th>ID</th>
-                    <th>Наш чемпіон (Item)</th>
-                    <th>Опонент на лінії</th>
-                    <th>Тактичний план</th>
-                    <th>Статус</th>
-                    <th>Автор (User)</th>
-                    <th class="text-end">Дії</th>
+                    <th style="width: 60px;">ID</th>
+                    <th style="width: 170px;">Наш чемпіон (Item)</th>
+                    <th style="width: 170px;">Опонент на лінії</th>
+                    <th>Тактичний план протидії (Mobalytics Tips)</th>
+                    <th style="width: 110px;">Статус</th>
+                    <th style="width: 120px;">Автор (User)</th>
+                    <th class="text-end" style="width: 100px;">Дії</th>
                 </tr>
             </thead>
             <tbody>
             @if (!Model.Any())
             {
                 <tr>
-                    <td colspan="7" class="text-center py-4 text-secondary">
-                        Гайдів ще немає. Натисніть кнопку вище, щоб сформувати перший тактичний план проти ворожого чемпіона!
+                    <td colspan="7" class="text-center py-5 text-secondary">
+                        <i class="bi bi-journal-x display-4 d-block mb-3"></i>
+                        Гайдів проти опонентів ще немає в базі.<br />
+                        Натисніть <strong>«Автоімпорт тактик Mobalytics»</strong>, щоб заповнити базу тактичними порадами!
                     </td>
                 </tr>
             }
             @foreach (var action in Model)
             {
                 <tr>
-                    <td>@action.ID</td>
-                    <td class="fw-bold text-success">@(action.Item?.ChampionName ?? "ID " + action.ItemID)</td>
-                    <td class="fw-bold text-danger">vs @action.OpponentChampion</td>
-                    <td><small>@action.ActionDetails</small></td>
+                    <td><code>#@action.ID</code></td>
+                    <td class="fw-bold text-info">@(action.Item?.ChampionName ?? "ID " + action.ItemID)</td>
+                    <td class="fw-bold text-danger"><span class="badge bg-danger-subtle text-danger border border-danger">vs @action.OpponentChampion</span></td>
+                    <td><small class="text-light">@action.ActionDetails</small></td>
                     <td>
                         @if (action.Status == "Approved")
                         {
@@ -55,12 +99,12 @@
                             <span class="badge bg-warning text-dark">Draft</span>
                         }
                     </td>
-                    <td><span class="badge bg-primary">@(action.User?.Name ?? "ID " + action.UserID)</span></td>
+                    <td><span class="badge bg-secondary">@(action.User?.Name ?? "ID " + action.UserID)</span></td>
                     <td class="text-end">
-                        <a asp-action="Edit" asp-route-id="@action.ID" class="btn btn-sm btn-outline-warning me-1">
+                        <a asp-action="Edit" asp-route-id="@action.ID" class="btn btn-sm btn-outline-warning me-1" title="Редагувати">
                             <i class="bi bi-pencil"></i>
                         </a>
-                        <a asp-action="Delete" asp-route-id="@action.ID" class="btn btn-sm btn-outline-danger">
+                        <a asp-action="Delete" asp-route-id="@action.ID" class="btn btn-sm btn-outline-danger" title="Видалити">
                             <i class="bi bi-trash"></i>
                         </a>
                     </td>
@@ -68,5 +112,36 @@
             }
             </tbody>
         </table>
+    </div>
+</div>
+
+<!-- Модальне вікно для завантаження кастомного JSON з тактиками -->
+<div class="modal fade" id="importActionsModal" tabindex="-1" aria-labelledby="importActionsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content card-custom text-light">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title text-warning" id="importActionsModalLabel">
+                    <i class="bi bi-upload me-2"></i> Імпорт тактичних гайдів із JSON
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="ImportJsonFile" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p class="text-secondary small">
+                        Оберіть файл формату <code>.json</code> з полями: <code>ChampionName</code>, <code>OpponentChampion</code>, <code>ActionDetails</code>, <code>Status</code>.
+                    </p>
+                    <div class="mb-3">
+                        <label class="form-label">Оберіть файл на комп'ютері:</label>
+                        <input type="file" name="jsonFile" accept=".json" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                    <button type="submit" class="btn btn-warning text-dark fw-bold">
+                        <i class="bi bi-cloud-arrow-up"></i> Імпортувати в базу
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

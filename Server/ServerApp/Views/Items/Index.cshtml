@@ -4,50 +4,102 @@
     ViewData["Title"] = "Керування Items (Champion Loadouts)";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <h2><i class="bi bi-shield-shaded text-success"></i> Сетапи чемпіонів (Items)</h2>
-    <a asp-action="Create" class="btn btn-success">
-        <i class="bi bi-plus-circle"></i> Створити сетап чемпіона
-    </a>
+<!-- Сповіщення про результати операцій -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i> @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["InfoMessage"] != null)
+{
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <i class="bi bi-info-circle-fill me-2"></i> @TempData["InfoMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div>
+        <h2 class="mb-0"><i class="bi bi-shield-shaded text-success"></i> Сетапи чемпіонів (Items)</h2>
+        <span class="text-secondary small">Загальна кількість у системі: <strong>@Model.Count()</strong></span>
+    </div>
+
+    <div class="d-flex flex-wrap gap-2">
+        <!-- 1. Кнопка швидкого завантаження ростеру Mobalytics в 1 клік -->
+        <form asp-action="SeedMobalytics" method="post" class="d-inline">
+            <button type="submit" class="btn btn-warning text-dark fw-bold shadow-sm" onclick="return confirm('Завантажити всіх чемпіонів із повними 6-предметними збірками Mobalytics?');">
+                <i class="bi bi-lightning-charge-fill"></i> Автоімпорт Mobalytics (173)
+            </button>
+        </form>
+
+        <!-- 2. Кнопка відкриття модального вікна для завантаження власного JSON -->
+        <button type="button" class="btn btn-outline-info shadow-sm" data-bs-toggle="modal" data-bs-target="#importJsonModal">
+            <i class="bi bi-file-earmark-arrow-up"></i> Завантажити JSON
+        </button>
+
+        <!-- 3. Звичайна кнопка створення одного запису вручну -->
+        <a asp-action="Create" class="btn btn-success shadow-sm">
+            <i class="bi bi-plus-circle"></i> Додати сетап
+        </a>
+    </div>
 </div>
 
 <div class="card card-custom">
-    <div class="card-body p-0 table-responsive">
+    <div class="card-body p-0 table-responsive" style="max-height: 700px; overflow-y: auto;">
         <table class="table table-custom table-hover align-middle mb-0">
-            <thead>
+            <thead class="sticky-top bg-dark">
                 <tr>
-                    <th>ID</th>
-                    <th>Чемпіон</th>
-                    <th>Роль</th>
-                    <th>Ключові предмети</th>
+                    <th style="width: 60px;">ID</th>
+                    <th style="width: 150px;">Чемпіон</th>
+                    <th style="width: 100px;">Роль</th>
+                    <th>Ключові 6 предметів (Mobalytics Build)</th>
                     <th>Руни</th>
-                    <th>Автор (User)</th>
-                    <th class="text-end">Дії</th>
+                    <th style="width: 120px;">Автор (User)</th>
+                    <th class="text-end" style="width: 100px;">Дії</th>
                 </tr>
             </thead>
             <tbody>
             @if (!Model.Any())
             {
                 <tr>
-                    <td colspan="7" class="text-center py-4 text-secondary">
-                        Жодного сетапу ще не створено. Створіть спочатку користувача, а потім додайте перший білд!
+                    <td colspan="7" class="text-center py-5 text-secondary">
+                        <i class="bi bi-inbox display-4 d-block mb-3"></i>
+                        Жодного чемпіона ще немає в базі.<br />
+                        Натисніть <strong>«Автоімпорт Mobalytics (173)»</strong> угорі, щоб миттєво наповнити базу!
                     </td>
                 </tr>
             }
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.ID</td>
-                    <td class="fw-bold text-success">@item.ChampionName</td>
-                    <td><span class="badge bg-secondary">@item.Role</span></td>
-                    <td><small>@item.CoreItemBuild</small></td>
-                    <td><small>@item.RuneSetup</small></td>
-                    <td><span class="badge bg-primary">@(item.User?.Name ?? "ID " + item.UserID)</span></td>
+                    <td><code>#@item.ID</code></td>
+                    <td class="fw-bold text-info">@item.ChampionName</td>
+                    <td>
+                        <span class="badge @(item.Role switch {
+                            "Top" => "bg-danger",
+                            "Jungle" => "bg-success",
+                            "Mid" => "bg-primary",
+                            "ADC" => "bg-warning text-dark",
+                            _ => "bg-info text-dark"
+                        })">@item.Role</span>
+                    </td>
+                    <td><small class="text-light font-monospace">@item.CoreItemBuild</small></td>
+                    <td><small class="text-secondary">@item.RuneSetup</small></td>
+                    <td><span class="badge bg-secondary">@(item.User?.Name ?? "ID " + item.UserID)</span></td>
                     <td class="text-end">
-                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-outline-warning me-1">
+                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-outline-warning me-1" title="Редагувати">
                             <i class="bi bi-pencil"></i>
                         </a>
-                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-outline-danger">
+                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-outline-danger" title="Видалити">
                             <i class="bi bi-trash"></i>
                         </a>
                     </td>
@@ -55,5 +107,36 @@
             }
             </tbody>
         </table>
+    </div>
+</div>
+
+<!-- Модальне вікно для завантаження кастомного JSON файлу -->
+<div class="modal fade" id="importJsonModal" tabindex="-1" aria-labelledby="importJsonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content card-custom text-light">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title text-info" id="importJsonModalLabel">
+                    <i class="bi bi-upload me-2"></i> Імпорт списку чемпіонів із JSON
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="ImportJsonFile" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p class="text-secondary small">
+                        Оберіть файл формату <code>.json</code> зі структурою: <code>ChampionName</code>, <code>Role</code>, <code>CoreItemBuild</code>, <code>RuneSetup</code>.
+                    </p>
+                    <div class="mb-3">
+                        <label class="form-label">Оберіть файл на комп'ютері:</label>
+                        <input type="file" name="jsonFile" accept=".json" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-cloud-arrow-up"></i> Завантажити в базу
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

@@ -1,0 +1,1040 @@
+[
+{
+"ChampionName": "Aatrox",
+"OpponentChampion": "Fiora",
+"ActionDetails": "Скасовуйте анімацію Q за допомогою E, щоб змусити її віддати Riposte (W) даремно. Купуйте ранній Executioner's Calling проти її відхилу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Akali",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Активуйте Twilight Shroud (W), коли у нього готове торнадо. Розряджайте пасивну автоатаку тільки після виходу з його Windwall.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ambessa",
+"OpponentChampion": "Jax",
+"ActionDetails": "Зберігайте мобільні стрибки пасивки, щоб негайно розірвати дистанцію під час його Counter Strike (E). Карайте після завершення його стану захисту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Camille",
+"OpponentChampion": "Renekton",
+"ActionDetails": "Зберігайте Hookshot (E) виключно як захисний інструмент для відходу. Не торгуйтеся короткими розмінами, якщо у Ренектйона понад 50 люті.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Cho'Gath",
+"OpponentChampion": "Vayne",
+"ActionDetails": "Купуйте Plated Steelcaps та Bramble Vest першими слотами. Фарміть хвилю за допомогою Q з безпечної відстані під своєю вежею.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Darius",
+"OpponentChampion": "Gnar",
+"ActionDetails": "Беріть руну Ghost та Phase Rush. Карайте його в момент переходу з форми Mega в Mini, поки його базові характеристики тимчасово занижені.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Dr. Mundo",
+"OpponentChampion": "Gwen",
+"ActionDetails": "Тримайте дистанцію від центру її ножиць (Q), щоб уникати чистого урону. Збирайте ранній магічний захист (Spectre's Cowl / Kaenic Rookern).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Fiora",
+"OpponentChampion": "Malphite",
+"ActionDetails": "Збирайте Ravenous Hydra першим слотом для безперервного пушу лінії. Реагуйте Riposte (W) на звук та анімацію його Unstoppable Force (R).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Gangplank",
+"OpponentChampion": "Irelia",
+"ActionDetails": "Розставляйте бочки позаду себе як страховку. Не дозволяйте їй безкарно накопичувати пасивку на міньйонах перед розмінами.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Garen",
+"OpponentChampion": "Teemo",
+"ActionDetails": "Починайте гру з Doran's Shield та руною Second Wind. Використовуйте очищення від сповільнення на Q тільки після того, як Тімо накладе W.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Gnar",
+"OpponentChampion": "Irelia",
+"ActionDetails": "Не бийтеся в формі Mini поруч із ворожими міньйонами. Зберігайте стрибок Hop (E) виключно для втечі від її підтягування Bladesurge.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Gragas",
+"OpponentChampion": "Riven",
+"ActionDetails": "Переривайте її третій стрибок Broken Wings (Q3) за допомогою Body Slam (E). Виснажуйте її здалеку вибухами бочок Barrel Roll (Q).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Gwen",
+"OpponentChampion": "Jax",
+"ActionDetails": "Вмикайте Hallowed Mist (W), щоб блокувати його спроби стрибка Leap Strike з дистанції. Накопичуйте заряди ножиць на міньйонах до початку розміну.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Illaoi",
+"OpponentChampion": "Mordekaiser",
+"ActionDetails": "Уникайте битви в зоні дії її щупалець. Затягуйте її в Death Realm (R) тільки після того, як вона прожме свій ультимейт, щоб анулювати її зону контролю.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Irelia",
+"OpponentChampion": "Jax",
+"ActionDetails": "Байтіть його Counter Strike (E): робіть ривок Q на дальнього міньйона для втечі, перечікуйте стан і лише потім продовжуйте бій.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Jax",
+"OpponentChampion": "Camille",
+"ActionDetails": "Використовуйте Counter Strike (E), коли Камілла запускає другу фазу Precision Protocol (Q2), щоб заблокувати 100% чистий урон.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Jayce",
+"OpponentChampion": "Malphite",
+"ActionDetails": "Агресивно покудайте його автоатаками у формі Cannon на 1–3 рівнях. Перемикайтеся на молот (Hammer E) для відкидання, коли він підходить упор.",
+"Status": "Approved"
+},
+{
+"ChampionName": "K'Sante",
+"OpponentChampion": "Aatrox",
+"ActionDetails": "Блокуйте третій прокаст Q Аатрокса за допомогою другого скіла Path Maker (W) зі зниженням вхідного урону на 50%.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kayle",
+"OpponentChampion": "Nasus",
+"ActionDetails": "Беріть руну Phase Rush, щоб нівелювати його сповільнення Wither (W). Тримайте лінію біля своєї вежі та уникайте автоатак під час його ультимейту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kennen",
+"OpponentChampion": "Jayce",
+"ActionDetails": "Використовуйте прискорення Lightning Rush (E) для ухилення від шокових сфер. Накладайте стан трьома мітками пасивки в момент його вриву молотом.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kled",
+"OpponentChampion": "Fiora",
+"ActionDetails": "Не викидайте мотузку Bear Trap (Q) прямолінійно, оскільки Фіора гарантовано спарує її станом. Спочатку провокуйте її на віддачу Riposte.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Malphite",
+"OpponentChampion": "Sylas",
+"ActionDetails": "Не віддавайте ультимейт під його крадіжку без гарантованого збиття. Купуйте Bramble Vest і максить сейсмоудар Ground Slam (E).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Mordekaiser",
+"OpponentChampion": "Illaoi",
+"ActionDetails": "Ніколи не застосовуйте Death Realm (R) до того, як Іллаой натисне ультимейт Leap of Faith — затягуйте її в світ смерті для повного знищення щупалець.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nasus",
+"OpponentChampion": "Darius",
+"ActionDetails": "Поступайтеся першими хвилями міньйонів. Заморожуйте лінію прямо перед вежею, купуйте Sheen та розряджайте стаки Q тільки після 6 рівня.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Olaf",
+"OpponentChampion": "Mordekaiser",
+"ActionDetails": "Зберігайте ультимейт Ragnarok (R) спеціально на момент, коли Мордекайзер кастує Death Realm, щоб миттєво зняти його арену.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ornn",
+"OpponentChampion": "Fiora",
+"ActionDetails": "Використовуйте нестримність Bellows Breath (W) проти її спроб оглушення Riposte. Куйте предмети на броню прямо на лінії.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Pantheon",
+"OpponentChampion": "Fiora",
+"ActionDetails": "Не використовуйте стрибок Shield Vault (W) напряму в готову Фіору. Виснажуйте її швидкими короткими ударами списа (Tap Q).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Poppy",
+"OpponentChampion": "Riven",
+"ActionDetails": "Активуйте Steadfast Presence (W) під час комбо Рівен: бар'єр заблокує всі її ривки Broken Wings та Valor, завдавши магічного урону.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Quinn",
+"OpponentChampion": "Malphite",
+"ActionDetails": "Беріть руну Fleet Footwork. Не віддавайте відштовхування Vault (E) заздалегідь, збирайте Edge of Night для блокування його першого касту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Renekton",
+"OpponentChampion": "Riven",
+"ActionDetails": "Заряджайте 50 люті та давайте посилене оглушення Ruthless Predator (W) в момент її першого стрибка Q. Виходьте з розміну подвійним ривком E.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Riven",
+"OpponentChampion": "Renekton",
+"ActionDetails": "Робіть короткі розміни: Q-W-автоатака і миттєвий відхід щитом Valor (E) назад до того, як Ренектон встигне втиснути стан по люті.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Rumble",
+"OpponentChampion": "Darius",
+"ActionDetails": "Кайтіть його уповільненням гарпунів Electro-Harpoon (E) та вогнеметом у зоні Danger Zone (50%+ нагріву). Не підходьте на дистанцію його захвату Apprehend.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Sett",
+"OpponentChampion": "Riven",
+"ActionDetails": "Не віддавайте Haymaker (W) завчасно. Накопичуйте максимальний щит Grit і використовуйте переривання Facebreaker (E) у комбо її третього стрибка.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Shen",
+"OpponentChampion": "Jax",
+"ActionDetails": "Вмикайте зону захисного меча Spirit's Refuge (W), коли Джакс крутить Counter Strike, щоб заблокувати 100% його автоатак та посилений удар W.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Singed",
+"OpponentChampion": "Fiora",
+"ActionDetails": "Байтіть її Riposte фальшивими рухами перед кидком Fling (E). Проксіть хвилю міньйонів за її вежею на ранніх рівнях.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Sion",
+"OpponentChampion": "Aatrox",
+"ActionDetails": "Відпускайте зарядку Decimating Smash (Q) завчасно, якщо Аатрокс піднімається у повітря для свого вістря Q, щоб не втратити скіл даремно.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Tahm Kench",
+"OpponentChampion": "Darius",
+"ActionDetails": "Набирайте 3 стаки пасивки ударами язика й автоатаками здалеку. Ковтайте його (Devour R) у момент, коли Даріус прожимає Ghost для забігу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Teemo",
+"OpponentChampion": "Garen",
+"ActionDetails": "Давайте сліпоту Blinding Dart (Q) строго в момент, коли Гарен біжить на вас із занесеним мечем Decisive Strike (Q), щоб звести весь урон до нуля.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Trundle",
+"OpponentChampion": "Rammus",
+"ActionDetails": "Застосовуйте ультимейт Subjugate (R) на Раммуса в момент, коли він активує захисну кулю W, викрадаючи величезну кількість броні та магічного захисту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Tryndamere",
+"OpponentChampion": "Malphite",
+"ActionDetails": "Швидко пуште лінію з Tiamat і роуміть у ворожий ліс. Не намагайтеся йти в лобову дуель, поки діє сповільнення швидкості атаки від його Ground Slam.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Urgot",
+"OpponentChampion": "Jax",
+"ActionDetails": "Зачекайте повного завершення його стану Counter Strike (E), і тільки після цього прожимайте кидок Disdain (E) та вмикайте кулемет Purge (W).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Volibear",
+"OpponentChampion": "Jax",
+"ActionDetails": "Не віддавайте удар оглушення Thundering Smash (Q) у його Counter Strike. Скидайте громовий щит Sky Splitter (E) прямо під себе для поглинання прокасту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Warwick",
+"OpponentChampion": "Fiora",
+"ActionDetails": "Утримуйте клавішу Jaws of the Beast (Q), щоб перестрибнути за спину Фіорі, коли вона виставляє меч у стійку Riposte.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Wukong",
+"OpponentChampion": "Darius",
+"ActionDetails": "Використовуйте клон Warrior Trickster (W), щоб підставити його під зовнішнє коло сокири Decimate (Q) або повністю увібрати ультимейт Даріуса.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Yasuo",
+"OpponentChampion": "Darius",
+"ActionDetails": "Робіть ривок крізь міньйонів за допомогою Sweeping Blade (E) у внутрішній радіус його сокири Q, щоб уникнути накопичення кровотечі та лікування.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Yone",
+"OpponentChampion": "Renekton",
+"ActionDetails": "Використовуйте Soulbound Form (E) для швидких точкових розмінів і миттєво повертайтеся назад до того, як Ренектон розрядить посилений люттю стан.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Yorick",
+"OpponentChampion": "Irelia",
+"ActionDetails": "Ніколи не випускайте туманних гулів (Ghouls), поки Ірелія поруч: вона використовує їх для миттєвого перезарядження Bladesurge (Q) та відхилу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zaahen",
+"OpponentChampion": "Darius",
+"ActionDetails": "Не йдіть у розміни до 3-го рівня. Використовуйте ривок Trinity Force для виходу з зовнішнього радіуса Decimate (Q). Збирайте Plated Steelcaps першим поверненням.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Amumu",
+"OpponentChampion": "Lee Sin",
+"ActionDetails": "Зберігайте бинти Bandage Toss (Q) як контратаку в момент, коли Лі Сін летить на вас другою фазою резонуючого удару Q2.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Bel'Veth",
+"OpponentChampion": "Rammus",
+"ActionDetails": "Беріть руни стійкості (Tenacity). Ніколи не активуйте шквал Royal Maelstrom (E), поки ви перебуваєте під дією його провокації з Thornmail.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Briar",
+"OpponentChampion": "Jax",
+"ActionDetails": "Не прожимайте стан безумства Blood Frenzy (W), поки у Джакса готовий Counter Strike. Використовуйте крик Chilling Scream (E) для негайного розриву дистанції.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Diana",
+"OpponentChampion": "Xin Zhao",
+"ActionDetails": "Перечекайте третій підкидаючий удар його Three Talon Strike, перш ніж притягувати ворогів комбінацією Moonfall (R).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ekko",
+"OpponentChampion": "Kayn",
+"ActionDetails": "Використовуйте ультимейт Chronobreak (R) рівно в ту мить, коли Каїн виходить з вашого тіла після Umbral Trespass, щоб зцілитися та розрядити вибух.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Elise",
+"OpponentChampion": "Lee Sin",
+"ActionDetails": "Піднімайтеся на павутині Rappel (E) в повітря, щоб ухилитися від другого касту його Q або фатального удару Dragon's Rage (R).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Evelynn",
+"OpponentChampion": "Rengar",
+"ActionDetails": "Не заходьте у ворожий ліс без пасивного маскування. Накладайте Allure (W) на Ренгара завчасно, коли він готується вистрибнути з ультимейту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Fiddlesticks",
+"OpponentChampion": "Xin Zhao",
+"ActionDetails": "Заряджайте Crowstorm (R) виключно з-за непроглядних стін; миттєво накладайте страх Terrify (Q) на його врив Audacious Charge.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Graves",
+"OpponentChampion": "Master Yi",
+"ActionDetails": "Кидайте димову завісу Smoke Screen (W) прямо під ноги Майстра Йі під час Highlander, щоб позбавити його огляду і можливості наносити автоатаки.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Hecarim",
+"OpponentChampion": "Poppy",
+"ActionDetails": "Не розганяйте розбіг Devastating Charge (E) прямолінійно в Поппі, якщо її кругова зона Steadfast Presence (W) готова вас заблокувати.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ivern",
+"OpponentChampion": "Kha'Zix",
+"ActionDetails": "Викликайте Дейзі (Daisy) впритул до себе, щоб вона виступала живим щитом та блокувала додатковий урон від його пасивної ізоляції (Isolation).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Jarvan IV",
+"OpponentChampion": "Viego",
+"ActionDetails": "Замикайте Вієго ареною Cataclysm (R) у вузьких проходах джунглів, коли у нього немає готового спалаху або туману для маскування.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Karthus",
+"OpponentChampion": "Shaco",
+"ActionDetails": "Розкривайте пастки-коробки стіною болю Wall of Pain (W). Зберігайте ультимейт Requiem (R) для гарантованого добивання після його виходу з інвізу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kayn",
+"OpponentChampion": "Graves",
+"ActionDetails": "Обирайте форму Shadow Assassin проти тонких цілей або Rhaast (Червоний) проти Грейвза для максимального відхилу від його броньованого здоров'я.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kha'Zix",
+"OpponentChampion": "Lee Sin",
+"ActionDetails": "Використовуйте Tempest (E) для розкриття його невидимості. Не бийтеся у відриві від союзників або кемпів, щоб позбавити його урону від пасивки Isolate.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kindred",
+"OpponentChampion": "Master Yi",
+"ActionDetails": "Активуйте Lamb's Respite (R) у момент, коли Майстер Йі віддає Alpha Strike (Q), і розряджайте критичний третій постріл Mounting Dread після завершення зони.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Lee Sin",
+"OpponentChampion": "Kha'Zix",
+"ActionDetails": "Розкривайте інвіз Ка'Зікса за допомогою удару Tempest (E). Відкидайте його копняком Dragon's Rage (R), якщо він заскочив вас у стані ізоляції.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Lillia",
+"OpponentChampion": "Jarvan IV",
+"ActionDetails": "Підтримуйте максимальну швидкість пересування пасивкою для кайту його прапора EQ. Занурюйте його в сон ультимейтом через стіни арени.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Master Yi",
+"OpponentChampion": "Rammus",
+"ActionDetails": "Купуйте Quicksilver Sash для очищення від провокації. Вмикайте Wuju Style (E) для пробиття чистого урону крізь його броню.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nidalee",
+"OpponentChampion": "Graves",
+"ActionDetails": "Влучайте списом Javelin Toss (Q) з туману війни з максимальної відстані перед тим, як переходити у форму кішки для стрибка Pounce.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nocturne",
+"OpponentChampion": "Briar",
+"ActionDetails": "Блокуйте її набіг або ультимейт магічним щитом Shroud of Darkness (W). Зав'язуйте нитку страху Unspeakable Horror (E), поки вона в агро-стані.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nunu & Willump",
+"OpponentChampion": "Trundle",
+"ActionDetails": "Ніколи не кастуйте ультимейт Absolute Zero (R) поруч із Трандлом, доки у нього готовий стовп льоду Pillar of Ice (E) для миттєвого збиття каналізації.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Rammus",
+"OpponentChampion": "Master Yi",
+"ActionDetails": "Максіть захисну броню Defensive Ball Curl (W) і накладайте провокацію Frenzying Taunt (E) в той момент, коли Майстер Йі вмикає ультимейт Highlander.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Rek'Sai",
+"OpponentChampion": "Evelynn",
+"ActionDetails": "Використовуйте підземний сонар Tremor Sense під час занурення Burrow, щоб виявляти точні кроки невидимої Евелін ще до її нападу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Rengar",
+"OpponentChampion": "Lee Sin",
+"ActionDetails": "Чекайте розрядки його Tempest (E) перед стрибком з кущів. Використовуйте посилений Battle Roar (W) для миттєвого зняття будь-якого контролю.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Sejuani",
+"OpponentChampion": "Viego",
+"ActionDetails": "Швидко накопичуйте 4 стаки морозу за допомогою союзників ближнього бою, блокуючи його серію перезавантажень пасивним станом Permafrost.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Shaco",
+"OpponentChampion": "Lee Sin",
+"ActionDetails": "Розставляйте коробки Jack in the Box уздовж шляху свого відходу, щоб налякати Лі Сіна під час другої фази польоту його резонуючого удару Q.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Shyvana",
+"OpponentChampion": "Vi",
+"ActionDetails": "Уникайте ранніх сутичок за крабів річки до 6 рівня. Забирайте драконів на спавні та контрганкайте за допомогою ультимейту Dragon's Descent.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Skarner",
+"OpponentChampion": "Olaf",
+"ActionDetails": "Не віддавайте ультимейт утримання Impale (R), доки в Олафа активний стан Ragnarok. Сповільнюйте його камінням Ixtal's Impact.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Taliyah",
+"OpponentChampion": "Hecarim",
+"ActionDetails": "Розстеляйте кам'яне поле Unraveled Earth (E) прямо перед собою: Гекарім розіб'ється об камені й буде оглушений під час свого розгону E.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Udyr",
+"OpponentChampion": "Warwick",
+"ActionDetails": "Використовуйте пробуджену форму фенікса (Awakened R) для швидкого випалювання кемпів та черепаху/вепра (W) для поглинання його укусів на низькому HP.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Vi",
+"OpponentChampion": "Nocturne",
+"ActionDetails": "Збивайте пасивний захисний щит Ноктюрна автоатакою або першою фазою наскоку, перш ніж запускати ультимейт Cease and Desist (R).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Viego",
+"OpponentChampion": "Master Yi",
+"ActionDetails": "Чекайте завершення його Alpha Strike (Q) перед запуском контролю Spectral Maw (W). Не бийтеся 1 на 1 на водяних кемпах без переваги в позиції.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Xin Zhao",
+"OpponentChampion": "Diana",
+"ActionDetails": "Активуйте арену Crescent Guard (R) у момент її вриву, щоб повністю звести нанівець вибуховий урон від її спалаху Moonfall.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zac",
+"OpponentChampion": "Viego",
+"ActionDetails": "Заряджайте стрибок Elastic Slingshot (E) із неоглядових зон через стіни. Зберігайте краплі пасивного відродження під союзною вежею.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ahri",
+"OpponentChampion": "Zed",
+"ActionDetails": "Зберігайте Charm (E) рівно на ту частку секунди, коли Зед з'являється за вашою спиною після виходу з Death Mark. Збирайте ранній Zhonya's Hourglass.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Anivia",
+"OpponentChampion": "Kassadin",
+"ActionDetails": "Зберігайте Flash Frost (Q) на момент його вриву Riftwalk. Не пуште лінію без контролю мани після його 6-го рівня.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Annie",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Утримуйте заряд стану пасивки Pyromania. Випускайте розряд оглушення автоатакою або кастом впритул, щоб він не спарував снаряд стіною Windwall.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Aurelion Sol",
+"OpponentChampion": "Fizz",
+"ActionDetails": "Купуйте ранні Mercury's Treads та Verdant Barrier. Ніколи не активуйте Astral Flight по прямій траєкторії, поки у Фіза доступний Chum the Waters.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Aurora",
+"OpponentChampion": "Syndra",
+"ActionDetails": "Використовуйте перехід у паралельний світ Realm Between, щоб змінити позицію в обхід конуса оглушення Scatter the Weak і розрядити ультимейт.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Azir",
+"OpponentChampion": "Sylas",
+"ActionDetails": "Розставляйте піщаних воїнів між собою та Сайласом. Відкидайте його стіною воїнів Emperor's Divide (R), коли він робить врив ланцюгами.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Cassiopeia",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Розливайте отруту Miasma (W) йому під ноги: статус Grounded повністю забороняє йому робити ривки Sweeping Blade (E) крізь ваших міньйонів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Corki",
+"OpponentChampion": "LeBlanc",
+"ActionDetails": "Зберігайте політ Valkyrie (W) виключно як реакцію на її стрибок Distortion. Виснажуйте її великими ракетами здалеку з безпечної позиції.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Fizz",
+"OpponentChampion": "Twisted Fate",
+"ActionDetails": "Стрибайте на тризубці Playful/Trickster (E) в момент, коли Твістед Фейт випускає золоту карту стану Gold Card, уникаючи оглушення.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Galio",
+"OpponentChampion": "Katarina",
+"ActionDetails": "Миттєво переривайте її ультимейт Death Lotus (R) за допомогою захисної провокації Shield of Durand (W) або підкидання Justice Punch (E).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Heimerdinger",
+"OpponentChampion": "Irelia",
+"ActionDetails": "Розставляйте турелі широко одна від одної, щоб Ірелія не могла легко робити ланцюгові скидання Q між ними. Оглушайте гранатою CH-2.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Hwei",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Використовуйте комбінацію EW (пастка під ноги) для фіксації переміщень Ясуо крізь міньйонів, не віддавайте снаряди в Windwall.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kassadin",
+"OpponentChampion": "LeBlanc",
+"ActionDetails": "Максіть сферу Null Sphere (Q) для отримання магічного щита під час розмінів. Атакуйте, коли вона віддає Distortion на зачистку хвилі.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Katarina",
+"OpponentChampion": "Galio",
+"ActionDetails": "Шукайте роумінг на бот-лейн. Ніколи не ультуйте (R), поки Галіо не використає свій провокаційний щит (W) або підкидання (E).",
+"Status": "Approved"
+},
+{
+"ChampionName": "LeBlanc",
+"OpponentChampion": "Vex",
+"ActionDetails": "Не використовуйте ривки для фарму. Провокуйте зняття її пасивного страху автоатаками, перш ніж входити в повний прокаст.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Lissandra",
+"OpponentChampion": "Zed",
+"ActionDetails": "Застосовуйте ультимейт Frozen Tomb (R) на себе в момент, коли Зед виходить з ультимейту, повністю анулюючи його прокаст та зцілюючись.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Locke",
+"OpponentChampion": "Zed",
+"ActionDetails": "Купуйте ранній Seeker's Armguard. Використовуйте інвіз/ухилення одразу після того, як Зед виходить з Death Mark, щоб повністю звести нанівець вибуховий прокаст.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Lux",
+"OpponentChampion": "Sylas",
+"ActionDetails": "Тримайте максимальну дистанцію на лінії. Карайте його коренем Light Binding (Q) під час анімації його першого підтягування ланцюгом.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Malzahar",
+"OpponentChampion": "Zed",
+"ActionDetails": "Утримуйте пасивний щит Void Shift готовим. Затискайте Зеда ультимейтом Nether Grasp (R) під союзною вежею при його спробах дайву.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Mel",
+"OpponentChampion": "Akali",
+"ActionDetails": "Встановлюйте захисну зону під ноги для підсвічування її димової завіси та поглинання вибухового магічного урону.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Naafiri",
+"OpponentChampion": "Ahri",
+"ActionDetails": "Використовуйте зграю гончаків (Packmates) для перекриття прямої траєкторії її Charm (E). Робіть стрибок комбо після віддачі нею контролю.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Neeko",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Запускайте клон Shapesplitter (W) вперед для байтингу його стіни або торнадо, а потім ловіть коренем Tangle-Barbs (E) крізь міньйонів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Orianna",
+"OpponentChampion": "Syndra",
+"ActionDetails": "Ставте кулю прямо між нею та міньйонами. Використовуйте Protect (E) завчасно для поглинання вибухового урону від її Dark Sphere.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Qiyana",
+"OpponentChampion": "Ahri",
+"ActionDetails": "Обирайте стихію трави (Grass Element) для постійної невидимості на лінії та ухилення від її скілшоshot-комбо перед фінальним вибухом.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ryze",
+"OpponentChampion": "Fizz",
+"ActionDetails": "Збирайте Rod of Ages першим предметом. Ловіть Фіза миттєвим рунічним коренем Rune Prison (W) до того, як він підніметься на тризубці.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Swain",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Кидайте кігті Nevermove (E) позаду його хвилі міньйонів для притягування. Вмикайте Demonic Ascension (R) під час його спроб олл-іну.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Sylas",
+"OpponentChampion": "Malphite",
+"ActionDetails": "Викрадайте його ультимейт Unstoppable Force (R) за кожної нагоди: високі AP-скаляри Сайласа перетворюють його на смертельну зброю для тімфайтів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Syndra",
+"OpponentChampion": "Akali",
+"ActionDetails": "Відкидайте її за допомогою Scatter the Weak (E) у момент виходу з диму Twilight Shroud. Контролюйте лінію хвилями на 6 рівні.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Talon",
+"OpponentChampion": "LeBlanc",
+"ActionDetails": "Швидко зачищайте лінію скілом Rake (W) та використовуйте стрибки крізь стіни Assassin's Path (E) для постійних ганків бот-лейну замість дуелей.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Twisted Fate",
+"OpponentChampion": "Fizz",
+"ActionDetails": "Не обирайте Gold Card заздалегідь. Байтіть його на стрибок Playful/Trickster (E) звичайною автоатакою, а потім блокуйте станом.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Veigar",
+"OpponentChampion": "Katarina",
+"ActionDetails": "Розставляйте клітку Event Horizon (E) прямо навколо себе: Катаріна не зможе стрибнути або крутити ультимейт через кільце оглушення.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Vel'Koz",
+"OpponentChampion": "Zed",
+"ActionDetails": "Тримайте максимальну дистанцію, покудайте поділом Q під кутом 90 градусів. Збирайте Zhonya's Hourglass першим поверненням.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Vex",
+"OpponentChampion": "LeBlanc",
+"ActionDetails": "Використовуйте пасивний страх Doom для переривання польоту її Distortion (W) у повітрі, моментально відповідаючи вибуховим комбо.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Viktor",
+"OpponentChampion": "Zed",
+"ActionDetails": "Кидайте Gravity Field (W) прямо під свої ноги, коли Зед заходить в ультимейт. Збирайте ранній Zhonya's Hourglass.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Vladimir",
+"OpponentChampion": "Malzahar",
+"ActionDetails": "Занурюйтеся в кривавий басейн Sanguine Pool (W) для уникнення його мовчанки. Купуйте Quicksilver Sash, якщо його ультимейт становить загрозу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Xerath",
+"OpponentChampion": "Fizz",
+"ActionDetails": "Ніколи не витрачайте кулю Shocking Orb (E) агресивно. Зберігайте її строго для захисту, коли він намагається підійти на дистанцію укусу риби.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zed",
+"OpponentChampion": "Malzahar",
+"ActionDetails": "Збивайте пасивний щит Мальзахара сюрікеном (Q) перед прокастом тіней. Купуйте Quicksilver Sash для очищення від ультимейту Nether Grasp.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ziggs",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Перекидайте бомби Bouncing Bomb (Q) через міньйонів. Відкидайте Ясуо від себе зарядом Satchel Charge (W) у разі його агресивного вриву.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zoe",
+"OpponentChampion": "Yasuo",
+"ActionDetails": "Запускайте Paddle Star (Q) під незвичними кутами з туману в обхід його стіни вітру. Накладайте сон Sleepy Trouble Bubble на його ривки.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Akshan",
+"OpponentChampion": "Draven",
+"ActionDetails": "Використовуйте маскування Going Rogue (W) біля ландшафту для флангових атак. Нападайте в той момент, коли Дрейвен біжить ловити свою сокиру.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Aphelios",
+"OpponentChampion": "Samira",
+"ActionDetails": "Утримуйте зв'язку пістолета Severum та турелі Crescendum. Знищуйте її вибуховим фокусом до того, як вона накопичить S-ранг для ультимейту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ashe",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Використовуйте Hawkshot (E) для контролю кущів на лінії. Сповільнюйте залпом Volley (W) строго із-за спин союзних міньйонів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Caitlyn",
+"OpponentChampion": "Draven",
+"ActionDetails": "Ставте пастки Yordle Snap Trap у точки приземлення його обертових сокир (Axe drops). Використовуйте перевагу в ренджі для виснаження без розмінів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Draven",
+"OpponentChampion": "Vayne",
+"ActionDetails": "Повністю домінуйте на 1–3 рівнях із двома обертовими сокирами. Купуйте ранній Bloodthirster, щоб позбавити Вейн шансів на скейл.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Ezreal",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Використовуйте Arcane Shift (E) з затримкою буферизації введення: скіл спрацює навіть у разі попадання Rocket Grab і витягне вас назад у безпеку.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Jhin",
+"OpponentChampion": "Lucian",
+"ActionDetails": "Тримайте дистанцію та відскакуйте після четвертого пострілу. Розраховуйте відскоки гранати Dancing Grenade (Q) по вмираючих міньйонах.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Jinx",
+"OpponentChampion": "Samira",
+"ActionDetails": "Зберігайте пастку Flame Chompers (E) прямо під себе, коли Саміра робить врив E. Не випускайте Super Mega Death Rocket (R) у її Blade Whirl (W).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kai'Sa",
+"OpponentChampion": "Caitlyn",
+"ActionDetails": "Уникайте розмінів на 1–3 рівнях через різницю в дальності атаки. Шукайте ва-банк олл-ін на 6 рівні з саппортом, що має контроль.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kalista",
+"OpponentChampion": "Ashe",
+"ActionDetails": "Використовуйте стрибки пасивки Martial Poise назад для ухилення від Volley. Накопичуйте максимальну кількість списів перед роздиранням Rend (E).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Kog'Maw",
+"OpponentChampion": "Lucian",
+"ActionDetails": "Грайте від оборони до придбання двох предметів. Вмикайте Bio-Arcane Barrage (W) для розстрілу Люціана з недосяжної для нього дистанції.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Lucian",
+"OpponentChampion": "Vayne",
+"ActionDetails": "Тисніть агресивними розмінами з пасивними подвійними пострілами на ранній фазі. Робіть ривок Relentless Pursuit (E) по діагоналі, уникаючи її стану в стіну.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Miss Fortune",
+"OpponentChampion": "Braum",
+"ActionDetails": "Ніколи не кастуйте ультимейт Bullet Time (R), поки у Браума піднятий захисний щит Unbreakable (E), направлений у ваш бік.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nilah",
+"OpponentChampion": "Caitlyn",
+"ActionDetails": "Витримуйте раннє покудастійкою з Doran's Shield. Вмикайте серпанок Jubilant Veil (W), щоб повністю ухилитися від її хедшотів під час олл-іну.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Samira",
+"OpponentChampion": "Caitlyn",
+"ActionDetails": "Використовуйте обертання клинків Blade Whirl (W) для знищення її пострілу Peacemaker (Q) та ультимейту Ace in the Hole (R).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Sivir",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Вмикайте магічний щит Spell Shield (E) строго під його хук Rocket Grab для безкоштовного відновлення мани. Швидко зачищайте лінію рикошетом W.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Smolder",
+"OpponentChampion": "Draven",
+"ActionDetails": "Фарміть хвилю за допомогою дихання дракона Q виключно з-під вежі, накопичуючи 225 стаків і уникаючи прямих розстрілів Дрейвена.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Tristana",
+"OpponentChampion": "Jinx",
+"ActionDetails": "Стрибайте агресивно за допомогою Rocket Jump (W) на 2 рівні з накладенням вибухового заряду E, вбиваючи Джинкс до активації її пасивки.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Twitch",
+"OpponentChampion": "Caitlyn",
+"ActionDetails": "Поступайтеся пушем міньйонів. Відкривайтеся з маскування Ambush (Q) на 6 рівні з активованим Spray and Pray (R), коли вона підходить до річки.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Varus",
+"OpponentChampion": "Samira",
+"ActionDetails": "Випускайте ланцюги ультимейту Chain of Corruption (R) безпосередньо в момент, коли Саміра запускає Inferno Trigger, щоб миттєво зупинити її прокаст.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Vayne",
+"OpponentChampion": "Lucian",
+"ActionDetails": "Не віддавайте Condemn (E) без гарантованого стану в стіну. Уникайте прямої лінії з його променем Q крізь міньйонів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Xayah",
+"OpponentChampion": "Kai'Sa",
+"ActionDetails": "Утримуйте пір'я на землі до моменту олл-іну. Використовуйте політ Featherstorm (R) для ухилення від вибухових ракет Icathian Rain Кайси.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Yunara",
+"OpponentChampion": "Draven",
+"ActionDetails": "Грайте від захисту на ранніх рівнях. Використовуйте перевагу в швидкості атаки та кайтингу в командних боях, коли він втрачає сокири.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zeri",
+"OpponentChampion": "Lucian",
+"ActionDetails": "Покудайте скілом Burst Fire (Q) крізь міньйонів. Використовуйте ковзання крізь ландшафт на E для швидкого відходу при спробах його набігу.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Alistar",
+"OpponentChampion": "Leona",
+"ActionDetails": "Відкидайте Леону ударом Headbutt (W), коли вона намагається влетіти на Zenith Blade у вашого стрільця, контр-атакуючи підкиданням Pulverize (Q).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Bard",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Розставляйте святилища Caretaker's Shrine (W) позаду для прискорення стрільця. Кидайте ультимейт Tempered Fate (R) у ворожого керрі під час бійки.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Blitzcrank",
+"OpponentChampion": "Morgana",
+"ActionDetails": "Збивайте Black Shield автоатакою або підкиданням E, зберігаючи Rocket Grab на момент зняття магічного захисту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Brand",
+"OpponentChampion": "Nautilus",
+"ActionDetails": "Випалюйте його запас здоров'я пасивним полум'ям Blaze. Давайте комбо вогняного стану Q у момент, коли Наутілус стоїть в анімації хука.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Braum",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Ставайте прямо перед своїм стрільцем із піднятим щитом Unbreakable (E): щит перехопить хук Бліцкранка та поглине вибуховий урон.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Janna",
+"OpponentChampion": "Leona",
+"ActionDetails": "Переривайте політ Леони на мечі Zenith Blade (E) реактивним торнадо Howling Gale (Q) прямо в повітрі, рятуючи свого стрільця від контролю.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Karma",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Використовуйте щит прискорення Inspire (E) для виходу з траєкторії хука. Покудайте здалеку посиленим вибухом Mantra Q крізь міньйонів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Leona",
+"OpponentChampion": "Thresh",
+"ActionDetails": "Чекайте віддачі його помаху Flay (E), перш ніж запускати політ Zenith Blade у ворожого стрільця, гарантуючи попадання комбо оглушення.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Lulu",
+"OpponentChampion": "Rengar",
+"ActionDetails": "Тримайте Whimsy (W) виключно для миттєвого перетворення Ренгара на поліморф у момент його стрибка з ультимейту на вашого стрільця.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Maokai",
+"OpponentChampion": "Pyke",
+"ActionDetails": "Використовуйте переміщення Twisted Advance (W) для отримання нецільового стану (Untargetable) та ухилення від ультимейту Пайка Death from Below.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Milio",
+"OpponentChampion": "Leona",
+"ActionDetails": "Відкидайте Леону вогняним м'ячем Ultra Mega Fire Kick (Q) під час її ривка; знімайте її стан Solar Flare очищенням Breath of Life (R).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Morgana",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Накладайте Black Shield (E) на союзника, в якого летить рука Rocket Grab, повністю нівелюючи притягування та оглушення.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nami",
+"OpponentChampion": "Nautilus",
+"ActionDetails": "Ловіть ворожого стрільця у водяну бульбашку Aqua Prison (Q) у момент, коли Наутілус притягується до вашого союзника, щоб розірвати фокус.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Nautilus",
+"OpponentChampion": "Pyke",
+"ActionDetails": "Блокуйте його переміщення пасивним станом кореня. Використовуйте ультимейт Depth Charge у момент, коли Пайк намагається увійти в невидимість.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Pyke",
+"OpponentChampion": "Morgana",
+"ActionDetails": "Утримуйте гарпун Bone Skewer (Q), щоб змусити її витратити Black Shield завчасно на хибну ціль, після чого робіть врив станом Phantom Undertow.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Rakan",
+"OpponentChampion": "Leona",
+"ActionDetails": "Дочекайтеся розрядки стану Леони по стрільцю, після чого вривайтеся підкиданням Grand Entrance (W) прямо у ворожого адк для зміни фокусу бійки.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Rell",
+"OpponentChampion": "Nautilus",
+"ActionDetails": "Крадіть його захисні характеристики пасивкою Break the Mold. Збивайте його притягування комбінацією падіння Crash Down (W).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Renata Glasc",
+"OpponentChampion": "Samira",
+"ActionDetails": "Запускайте ультимейт Hostile Takeover (R) у момент, коли Саміра розкручує свій ультимейт, змушуючи її розстріляти власних союзників.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Senna",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Тримайтеся строго в межах хвилі міньйонів. Покудайте пострілом Piercing Darkness (Q) крізь міньйонів та ховайте союзника в туман Curse of the Black Mist (E).",
+"Status": "Approved"
+},
+{
+"ChampionName": "Seraphine",
+"OpponentChampion": "Leona",
+"ActionDetails": "Випускайте звукову хвилю Beat Drop (E) крізь хвилю для сповільнення та оглушення Леони, коли вона розбігається з Zenith Blade.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Sona",
+"OpponentChampion": "Pyke",
+"ActionDetails": "Купуйте ранні Boots of Swiftness для ухилення від гарпунів. Зберігайте акорд Crescendo (R) для зупинки зарядки його натягування з кущів.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Soraka",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Кидайте зону мовчанки Equinox (E) прямо під ноги Бліцкранку, якщо він зумів притягнути вашого стрільця, блокуючи його підкидання E та ультимейт.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Taric",
+"OpponentChampion": "Leona",
+"ActionDetails": "Запускайте промінь оглушення Dazzle (E) через зв'язаного союзника прямо в Леону; заряджайте ультимейт невразливості Cosmic Radiance (R) на початку бою.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Thresh",
+"OpponentChampion": "Leona",
+"ActionDetails": "Збивайте її політ на мечі Zenith Blade (E) за допомогою зворотного Flay (E). Віддавайте ліхтар Dark Passage стрільцю до накладення стану Solar Flare.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Yuumi",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Перебувайте всередині тіла вашого стрільця під час присутності хука на лінії. Відчіпляйтеся для пасивного щита Bop 'n' Block тільки після промаху Бліца.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zilean",
+"OpponentChampion": "Pyke",
+"ActionDetails": "Кидайте бомби Time Bomb (Q) у напрямку його невидимого сліду. Зберігайте воскресіння Chronoshift (R) для анулювання перезарядки його ультимейту.",
+"Status": "Approved"
+},
+{
+"ChampionName": "Zyra",
+"OpponentChampion": "Blitzcrank",
+"ActionDetails": "Висаджуйте рослини скілом Rampant Growth (W) безпосередньо перед хуком Бліцкранка: рослина стане живим щитом і перехопить руку замість вас.",
+"Status": "Approved"
+}
+]
