@@ -125,49 +125,58 @@ $$
 
 ```text
 ManagementSystem/
-├── .gitignore                          # Фільтрація бінарників bin/, obj/, секретів та налаштувань
-├── README.md                           # Головна зведена документація проєкту
-├── Database/                           # База даних та каталоги наповнення
-│   ├── init.sql                        # DDL-схема з індексами та первинними даними
-│   ├── seed_all_champions.sql          # SQL-скрипт 171 чемпіона з білдами Mobalytics
-│   ├── champions_mobalytics.json       # Каталог 171 чемпіона для веб-імпорту
-│   ├── actions_mobalytics.json         # 173 тактики дій під опонентів
-│   └── actions_import_guide.md         # Довідник із роботи імпорту
-├── Docs/                               # Звітна документація та контракти (Завдання 11–12)
-│   ├── init.sql                        # Копія SQL-схеми для викладача
-│   ├── swagger.json                    # Експортований контракт OpenAPI v1
-│   ├── tasks_11_and_12_detailed_guide.md
-│   └── Screenshots/                    # Звітні скріншоти тестування (Завдання 10)
-│       ├── 01_admin_dashboard.png
-│       ├── 02_items_table_173.png
-│       ├── 03_actions_table_173.png
-│       ├── 04_swagger_ui.png
-│       ├── 05_postman_login_200.png
-│       ├── 06_postman_get_items_200.png
-│       ├── 07_postman_post_action_201.png
-│       ├── 08_postman_validation_400.png
-│       ├── 09_postman_unauthorized_401.png
-│       └── 10_maui_items_catalog.png
+├── .gitignore                                  # Фільтрація bin/, obj/, секретів та налаштувань
+├── README.md                                   # Головна зведена документація проєкту
+├── Database/                                   # База даних та каталоги наповнення
+│   ├── init.sql                                # DDL-схема з індексами та первинними даними
+│   ├── seed_all_champions.sql                  # SQL-скрипт 171 чемпіона з білдами Mobalytics
+│   ├── champions_mobalytics.json               # Каталог 171 чемпіона для веб-імпорту
+│   ├── actions_mobalytics.json                 # 173 тактики дій під опонентів
+│   └── actions_import_guide.md                 # Довідник із роботи імпорту
+├── Docs/                                       # Звітна документація та контракти (Завдання 11–12)
+│   ├── init.sql                                # Копія SQL-схеми для перевірки
+│   ├── swagger.json                            # Експортований контракт OpenAPI v1
+│   ├── tasks_11_and_12_detailed_guide.md       # Покроковий гід оптимізації
+│   └── Screenshots/                            # Звітні скріншоти тестування (Завдання 10)
+│       ├── 1 - admin_login.jpg
+│       ├── 2 - admin_dashboard.jpg
+│       ├── 3 - users.jpg
+│       ├── 4 - added_users.jpg
+│       ├── 5 - champion_list_items.jpg
+│       ├── 6 - actions_list.jpg
+│       ├── 7 - working_foreign_key.jpg
+│       ├── 8 - working_foreign_key_2.jpg
+│       ├── 9 - swagger.jpg
+│       ├── 10 - swagger.jpg
+│       ├── 11 - postman_token.jpg
+│       ├── 12 - postman_get_table.jpg
+│       ├── 13 - postman_make_actions_record.jpg
+│       ├── 14 - postman_check_1.jpg
+│       ├── 15 - postman_check_2.jpg
+│       ├── 16 - maui_items_catalog.jpg
+│       ├── 17 - adding_matchup_guide_maui.jpg
+│       ├── 18 - added_matchup_guide_maui.jpg
+│       └── 19 - updated_actions_table.jpg
 ├── Server/
 │   ├── ServerApp.slnx
 │   └── ServerApp/
-│       ├── Controllers/                # MVC-контролери (Admin, Users, Items, Actions)
-│       │   └── Api/                    # REST API контролери (AuthApi, Items, Actions)
-│       ├── Data/                       # Контекст EF Core (AppDbContext)
-│       ├── DTOs/                       # Моделі передачі даних (ItemResponse, ActionCreate, Auth)
-│       ├── Models/                     # Доменні моделі (User, Item, ActionRecord)
-│       ├── Views/                      # Razor Views з темною темою Bootstrap 5
-│       ├── Program.cs                  # Налаштування конвеєра middleware, JWT та DI
+│       ├── Controllers/                        # MVC-контролери (Admin, Users, Items, Actions)
+│       │   └── Api/                            # REST API контролери (AuthApi, Items, Actions)
+│       ├── Data/                               # Контекст EF Core (AppDbContext)
+│       ├── DTOs/                               # Моделі передачі даних (ItemResponse, ActionCreate, Auth)
+│       ├── Models/                             # Доменні моделі (User, Item, ActionRecord)
+│       ├── Views/                              # Razor Views з темною темою Bootstrap 5
+│       ├── Program.cs                          # Middleware, JWT, DI та маршрутизація
 │       └── ServerApp.csproj
 └── Client/
     ├── ClientApp.slnx
     └── ClientApp/
-        ├── Converters/                 # ValueConverters для XAML-розмітки
-        ├── Models/                     # Клієнтські моделі даних
-        ├── Services/                   # ApiService (HttpClient, налаштування токенів)
-        ├── ViewModels/                 # MVVM: LoginViewModel, ItemsViewModel, ActionViewModel
-        ├── Views/                      # XAML-екрани: LoginPage, ItemsPage, ActionPage
-        ├── App.xaml / App.xaml.cs      # Навігаційний стек
+        ├── Converters/                         # ValueConverters для XAML-розмітки
+        ├── Models/                             # Клієнтські моделі даних
+        ├── Services/                           # ApiService (HttpClient, авторизація)
+        ├── ViewModels/                         # MVVM: LoginViewModel, ItemsViewModel, ActionViewModel
+        ├── Views/                              # XAML-екрани: LoginPage, ItemsPage, ActionPage
+        ├── App.xaml / App.xaml.cs              # Навігаційний стек
         └── ClientApp.csproj
 ```
 
@@ -265,9 +274,30 @@ dotnet run -f net10.0-windows10.0.19041.0
 ## 📸 8. Звітні матеріали тестування
 
 Усі результати наскрізного тестування системи збережено у директорії `Docs/Screenshots/`:
-* Перевірка захисту адмін-панелі та головного дашборду.
-* Повний каталог 173 чемпіонів та таблиця тактичних гайдів у веб-інтерфейсі.
-* Інтерактивна сторінка Swagger UI з переліком доступних маршрутів.
-* Позитивні сценарії Postman: авторизація (`200 OK`), отримання списку чемпіонів (`200 OK`), додавання гайду (`201 Created`).
-* Негативні сценарії Postman: валідація неіснуючого `itemId: 99999` (`400 Bad Request`) та запит без токена (`401 Unauthorized`).
-* Інтерфейс клієнтського застосунку .NET MAUI (вхід, CollectionView чемпіонів, форма публікації тактики).
+
+### Веб-панель керування (MVC) та цілісність даних:
+* `1 - admin_login.jpg` — форма входу адміністратора в панель керування.
+* `2 - admin_dashboard.jpg` — головний дашборд зі статистикою бази даних.
+* `3 - users.jpg` — перегляд таблиці користувачів (Strategists).
+* `4 - added_users.jpg` — підтвердження успішного створення нових користувачів.
+* `5 - champion_list_items.jpg` — повний ростер 173 чемпіонів із білдами та рунами.
+* `6 - actions_list.jpg` — таблиця 173 тактичних гайдів дій проти опонентів.
+* `7 - working_foreign_key.jpg` — перевірка посилальної цілісності Foreign Key при створенні гайду.
+* `8 - working_foreign_key_2.jpg` — демонстрація зв'язку між авторами, тактиками та сетапами.
+
+### Документація REST API (Swagger UI):
+* `9 - swagger.jpg` — інтерактивна сторінка OpenAPI v1 з переліком доступних контролерів.
+* `10 - swagger.jpg` — виконання тестового виклику `GET /api/items` через Swagger UI зі статусом `200 OK`.
+
+### Тестування REST API у Postman (позитивні та негативні сценарії):
+* `11 - postman_token.jpg` — успішна автентифікація через `POST /api/auth/login` та отримання JWT (`200 OK`).
+* `12 - postman_get_table.jpg` — отримання каталогу чемпіонів через `GET /api/items` з Bearer-токеном (`200 OK`).
+* `13 - postman_make_actions_record.jpg` — публікація тактичного плану через `POST /api/actions` (`201 Created`).
+* `14 - postman_check_1.jpg` — негативний тест: блокування неавторизованого запиту (`401 Unauthorized`).
+* `15 - postman_check_2.jpg` — негативний тест: валідація неіснуючого `itemId: 99999` (`400 Bad Request`).
+
+### Клієнтський застосунок .NET MAUI:
+* `16 - maui_items_catalog.jpg` — головний екран мобільного клієнта з `CollectionView` 173 чемпіонів.
+* `17 - adding_matchup_guide_maui.jpg` — заповнення форми створення нового тактичного гайду.
+* `18 - added_matchup_guide_maui.jpg` — успішне збереження гайду та сповіщення про запис у базу.
+* `19 - updated_actions_table.jpg` — перевірка наскрізного оновлення: відображення створеного з MAUI запису у веб-адмінці.
